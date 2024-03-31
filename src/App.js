@@ -6,9 +6,13 @@ import "./css/Main.css";
 function App() {
   return (
     <div className="MainContainer">
-      <Routes>
-        <Route path="/" element={<First />}></Route>
-      </Routes>
+
+      {/* <Routes>
+        <Route path="/" element = {
+          <First/>
+        }></Route>
+      </Routes> */}
+      <First />
     </div>
   );
 }
