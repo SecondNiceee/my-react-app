@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import FirstTop from '../components/First/FirstTop';
 import '../css/First.css'
 import FirstMain from '../components/First/FirstMain';
+import FirstMenu from '../components/First/FirstMenu';
 
 const First = () => {
     const [ValuesArr, setValuesArr] = useState([
@@ -50,6 +51,9 @@ const First = () => {
             <FirstTop setSortBy={setfilterBy} />
             
             {  (filteredArr.length)  ?   <FirstMain ValuesArr={filteredArr}/> :  <h1 className='EmptyText'> Нет таких предложений </h1>  }
+
+            <FirstMenu/>
+            
         </div>
     );
 };
