@@ -6,9 +6,10 @@ import './css/Main.css'
 import './css/Fonts.css'
 
 ReactDOM.render(
-  <BrowserRouter>
-        <App />
-  </BrowserRouter>,
+  // <BrowserRouter>
+  //       <App />
+  // </BrowserRouter>,
+    <App />,
     document.getElementById('root')
 );
 
