@@ -52,7 +52,7 @@ const First = () => {
             
             {  (filteredArr.length)  ?   <FirstMain ValuesArr={filteredArr}/> :  <h1 className='EmptyText'> Нет таких предложений </h1>  }
 
-            <FirstMenu/>
+            {/* <FirstMenu/> */}
             
         </div>
     );
