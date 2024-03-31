@@ -1,0 +1,9 @@
+.MainContainer{
+    max-width: 430px;
+    height: 932px;
+    background-color: rgb(24, 34, 45);
+    margin: auto;
+    padding-left: calc(48px * (430/1180));
+    padding-right: calc(48px * (430/1180));
+    box-sizing: border-box;
+}

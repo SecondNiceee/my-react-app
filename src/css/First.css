@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin : 0;
+}
+
+.First{
+    display: flex;
+    flex-direction: column;
+}
+.EmptyText{
+    color: rgb(255, 255, 255);
+    font-family: "SF Pro Display";
+    font-size: calc(100px * 0.3644);
+    font-weight: 500;
+    line-height: normal ;
+    letter-spacing: 0%;
+    text-align: center;
+    max-width: calc(730px * 0.3644);
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.FirstTop{
+    margin-top: calc(55px * 0.4767);
+    display: flex;
+    gap: calc(30px * (430/1180));
+    flex-grow: 1;
+    align-items: center;
+}
+.FirstTop img{
+    width: calc(85px * 0.3644);
+    height: calc(85px * 0.3644);
+}
+.FirstMain{
+    margin-top: calc(55px * 0.4767);
+    display: flex;
+    flex-direction: column;
+    gap: calc(35px * 0.4767);
+}
+.First__block{
+    display: flex;
+    flex-direction: column;
+    padding: calc(57px* 0.3644) ;
+    border-radius: 30px;
+    background: rgb(32, 48, 63);
+}
+.FirstMain__top{
+    display: flex;
+}
+.FirstMain__top img{
+    width: calc(96px * 0.3644);
+    height: calc(96px * 0.3644);
+    margin-right: calc(30px * 0.3644);
+}
+.FirstMain__top p{
+    /* Default text */
+    color: rgb(255, 255, 255);
+    font-family: "SF Pro Display";
+    font-size: calc(44px * 0.3644);
+    font-weight: 500;
+    line-height: calc(53px * 0.3644) ;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: calc(730px * 0.3644);
+    margin-right: auto;
+}
+.circle{
+    width: calc(84px * 0.3644);
+    height: calc(84px * 0.3644);
+    border-radius: 50%;
+    background: rgb(34, 61, 82);
+    position: relative;
+}
+    .circle img{
+        width: calc(59px * 0.3644);
+        height: calc(59px * 0.3644);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+.FirstMain__middle{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:1px;
+}
+.FirstMain__middle p{
+    /* Small Text */
+    color: rgb(149, 151, 158);
+    font-family: "SF Pro Display";
+    font-size: calc(35px * 0.3644);
+    font-weight: 500;
+    line-height: (37.61px*0.3644);
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(149, 151, 158);
+}
+.FirstMain__bottom{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.FirstMain__bottom-left{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.FirstMain__bottom-left p{
+    /* Default text */
+    color: rgb(218, 245, 254);
+    font-family: "SF Pro Display";
+    font-size: calc(44px * 0.3644) ;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.FirstMain__price-up{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.FirstMain__price-up h3{
+    color: rgb(255, 255, 255);
+    font-family: "SF Compact Rounded";
+    font-size: calc(70px * 0.3644);
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.FirstMain__price-up img{
+    width: calc(65px * 0.3644);
+    height: calc(65px * 0.3644);
+}
+.FirstMain__bottom-right{
+    display: flex;
+    gap: calc(23px * 0.3644);
+}
+.FirstMain__bottom-right img{
+    width: calc(84px * 0.3644);
+    height: calc(84px * 0.3644);
+
+}
