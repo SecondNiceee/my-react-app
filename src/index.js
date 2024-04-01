@@ -8,7 +8,7 @@ import './css/Fonts.css'
 ReactDOM.render(
   // <BrowserRouter>
   //       <App />
-  // </BrowserRouter>,
+  // </BrowserRouter>,k
     <App />,
     document.getElementById('root')
 );

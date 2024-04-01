@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HumanIcon from '../../images/icon.png'
 import Pensel from '../../images/Pensel.png'
 import Dymond from '../../images/dymond.png'
 import Human from '../../images/human.png'
-const FirstMenu = () => {
+
+const FirstMenu = ({activeMenu , setActiveMenu}) => {
+    // const [ArrOfLinks , setArrOfLinks] = useState( { value : 'Создать задание' , href : './' },
+    // { value : 'Найти задание' , href : './' },
+    // { value : 'Создать задание' , href : './' },
+    // { value : 'Мои задание' , href : './' },
+    // { value : 'Уведомления' , href : './' },
+    // { value : 'Новости Коннект.биржи' , href : './' },
+    // {value : 'Стать исполнителем' , href : './'}) 
     return (
-        <div className='FirstMenu'>
-            
+        <div className= {  activeMenu ? 'FirstMenu'  :  'FirstMenu hidden'  }>
+            <div className='close'  onClick = {() => { setActiveMenu(!activeMenu)}  } >
+                <div className="close__container" style={{position : 'relative'}}>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
             <div className="FirstMenu__top">
                 <img src= {HumanIcon} alt="" />
                 <div className="FirstMenu__top-right">

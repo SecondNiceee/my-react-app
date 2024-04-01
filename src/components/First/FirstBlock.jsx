@@ -3,7 +3,6 @@ import DesignIcon from '../../images/Design-Icon.png'
 import Share from '../../images/LineShareIcon.png'
 import dymond from '../../images/dymond.png'
 import galstuk from '../../images/galstuk.png'
-import "../../css/First.css"
 import MyButton from '../UI/MyButton/MyButton';
 
 const FirstBlock = ({title, oneText, twoText, price, rublPrice}) => {

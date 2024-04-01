@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from "./Burger.module.css"
-const Burger = () => {
+const Burger = (props) => {
     return (
-        <div className= {classes.Burger}>
+        <div {...props} className= {classes.Burger}>
             <span></span>
             <span></span>
             <span></span>

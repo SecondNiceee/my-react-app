@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import Burger from "../UI/Burger/Burger";
-import "../../css/First.css";
 import OneInput from "../UI/OneInput/OneInput";
 
 import icon from "../../images/icon.png";
-const FirstTop = ( {setSortBy} ) => {
+const FirstTop = ( {setSortBy , setActiveMenu} ) => {
   const [inputValue, setInputValue] = useState("");
   return (
     <div className="FirstTop">
-      <Burger />
+      <Burger onClick = { () => {setActiveMenu(true)}} />
       <OneInput
         value={inputValue}
         onChange={(e) => {

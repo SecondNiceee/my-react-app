@@ -1,15 +1,10 @@
-*{
-    box-sizing: border-box;
-    margin : 0;
-}
-a{
-    text-decoration: none;
-}
+
 
 .First{
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow-x: hidden;
 }
 .EmptyText{
     color: rgb(255, 255, 255);
@@ -70,8 +65,8 @@ a{
     margin-right: auto;
 }
 .circle{
-    width: calc(84px * 0.3644);
-    height: calc(84px * 0.3644);
+    min-width: calc(84px * 0.3644);
+    max-height: calc(84px * 0.3644);
     border-radius: 50%;
     background: rgb(34, 61, 82);
     position: relative;
@@ -163,7 +158,13 @@ a{
     padding: calc(81px * 0.4767) calc(48px * 0.3644);
     display: flex;
     flex-direction: column;
+    transition: 0.5s
 }
+.FirstMenu.hidden{
+    left: -100%;
+}
+
+
 .FirstMenu .FirstMenu__top{
     display: flex;
     align-items: center;
@@ -191,7 +192,7 @@ a{
 }
 .MenuProfile{
     display: flex;
-    gap: 3px;
+    gap: 5px;
     align-items: center;
 }
 .MenuProfile img{
@@ -284,4 +285,30 @@ a{
     line-height: normal;
     letter-spacing: 0%;
     text-align: left;
+}
+.close {
+    cursor: pointer;
+    position: absolute;
+    width: calc(48px * 0.3644);
+    height: calc(48px * 0.3644);
+    right: calc(48px * 0.3644);
+    top: calc(79px * 0.4767);
+}
+.close span:nth-child(1){
+    position: absolute;
+    width: calc(62px * 0.3644 );
+    height: calc(6px * 0.4767);
+    background-color: white;
+    transform: rotate(45.00deg);
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+}
+.close span:nth-child(2){
+    position: absolute;
+    width: calc(62px * 0.3644 );
+    height: calc(6px * 0.4767);
+    background-color: white;
+    transform: rotate(-45.00deg);
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
 }
