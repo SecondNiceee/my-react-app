@@ -5,7 +5,7 @@ import dymond from '../../../images/dymond.png'
 import galstuk from '../../../images/galstuk.png'
 import MyButton from '../../UI/MyButton/MyButton';
 
-const FirstBlock = ({title, oneText, twoText, price, rublPrice , setIsDetailsActive , isButton}) => {
+const FirstBlock = ({title, executionPlace, startTime, tonPrice, rublesPrice , setDetailsActive , isButton}) => {
     return (
              <div className="First__block">
                 <div className="FirstMain__top">
@@ -18,20 +18,20 @@ const FirstBlock = ({title, oneText, twoText, price, rublPrice , setIsDetailsAct
 
                 </div>
                 <div className="FirstMain__middle">
-                    <p>{oneText}</p>
-                    <p>{twoText}</p>
+                    <p>{executionPlace}</p>
+                    <p>{startTime}</p>
                 </div>
                 <div className="FirstMain__bottom">
                     <div className="FirstMain__bottom-left">
                         <div className="FirstMain__price-up">
-                            <h3>{price}</h3>
+                            <h3>{tonPrice}</h3>
                             <img src={dymond} alt="" />
                         </div>
-                        <p>~ {rublPrice}</p>
+                        <p>~ {rublesPrice}</p>
                     </div>
                     <div className="FirstMain__bottom-right">
                         <img src={galstuk} alt="" />
-                        <MyButton style = { isButton ? {} : {display : 'none'} }  onClick = { (e) => setIsDetailsActive(true)  }>Подробнее</MyButton>
+                        <MyButton style = { isButton ? {} : {display : 'none'} }  onClick = { (e) => setDetailsActive(true)  }>Подробнее</MyButton>
                     </div>
                 </div>
             </div>

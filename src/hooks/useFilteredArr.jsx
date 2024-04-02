@@ -1,10 +1,10 @@
 import { useMemo } from "react";
 
-export const useFilteredArr = (ValuesArr , filterBy ) => {
+export const useFilteredArr = (ordersInformation , filterBy ) => {
     const filteredArr = useMemo(() => {
-        return ValuesArr.filter((e) =>
+        return ordersInformation.filter((e) =>
           e.title.toLowerCase().includes(filterBy.toLowerCase())
         );
-      }, [filterBy, ValuesArr]);
+      }, [filterBy, ordersInformation]);
     return filteredArr
 }

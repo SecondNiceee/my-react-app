@@ -28,7 +28,7 @@
 }
 
 .FirstTop {
-  margin-top: 26.2185px;
+  margin-top: 20.185px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +46,7 @@
 }
 
 .FirstMain {
-  margin-top: 26.2185px;
+  margin-top: 20.185px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +54,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 16.6845px;
+  gap: 12.845px;
 }
 
 .First__block {
@@ -202,7 +202,7 @@
   left: 0px;
   bottom: 0;
   width: 329.4176px;
-  padding: 38.6127px 17.4912px;
+  padding: 29.727px 17.4912px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,13 +272,13 @@
   text-align: left;
 }
 .FirstMenu .MenuPrice {
-  margin-top: 42.903px;
-  border-radius: 30px;
+  margin-top: 33.03px;
+  border-radius: 10.932px;
   background: rgb(32, 48, 63);
-  padding-top: 11.9175px;
+  padding-top: 9.175px;
   padding-left: 17.8556px;
   padding-right: 17.8556px;
-  padding-bottom: 11.9175px;
+  padding-bottom: 9.175px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,10 +288,18 @@
           align-items: center;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  position: relative;
 }
 .FirstMenu .MenuPrice img {
   width: 23.686px;
   height: 23.686px;
+}
+.FirstMenu .MenuPrice .upArr {
+  position: absolute;
+  top: 6.606px;
+  right: 6.5592px;
+  width: 5.1016px;
+  height: 5.1016px;
 }
 .FirstMenu .MenuTextPrice {
   /* TON Price */
@@ -322,8 +330,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 28.602px;
-  margin-top: 42.903px;
+  gap: 22.02px;
+  margin-top: 33.03px;
   /* Menu Text */
 }
 .FirstMenu .MenuList a {
@@ -341,7 +349,7 @@
   color: rgb(255, 255, 255);
 }
 .FirstMenu .Menu__Helps {
-  margin-top: 114.8847px;
+  margin-top: 88.447px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,12 +373,12 @@
   width: 17.4912px;
   height: 17.4912px;
   right: 17.4912px;
-  top: 37.6593px;
+  top: 28.993px;
 }
 .FirstMenu .close span:nth-child(1) {
   position: absolute;
   width: 22.5928px;
-  height: 2.8602px;
+  height: 2.202px;
   background-color: white;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -381,7 +389,7 @@
 .FirstMenu .close span:nth-child(2) {
   position: absolute;
   width: 22.5928px;
-  height: 2.8602px;
+  height: 2.202px;
   background-color: white;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);

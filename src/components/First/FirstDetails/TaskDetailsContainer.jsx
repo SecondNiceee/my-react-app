@@ -4,15 +4,15 @@ import FullDescription from "./FullDescription"
 import Dedline from './Dedline'
 import Status from './Status'
 import Customer from './Customer'
-const TaskDetailsContainer = ({ValuesArr}) => {
+const TaskDetailsContainer = ({orderInformation}) => {
   return (
     <div className="Task__container-one">
-      <FirstBlock {...ValuesArr} isButton = {false} />
-      <FullDescription fullDescription={ValuesArr.fullDescription} />
-      <Dedline dedline={ValuesArr.dedline} />
+      <FirstBlock {...orderInformation} isButton = {false} />
+      <FullDescription fullDescription={orderInformation.fullDescription} />
+      <Dedline dedline={orderInformation.dedline} />
       <div className="TaskDetails-row">
-        <Customer rate={ValuesArr.rate} name={ValuesArr.name} />
-        <Status isActive={ValuesArr.isActive} />
+        <Customer rate={orderInformation.rate} customerName={orderInformation.customerName} />
+        <Status isActive={orderInformation.isActive} />
       </div>
     </div>
   );

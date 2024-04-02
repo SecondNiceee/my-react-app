@@ -8,34 +8,48 @@ import FirstDetails from '../components/First/FirstDetails/FirstDetails'
 import { useFilteredArr } from "../hooks/useFilteredArr";
 
 const First = () => {
-  const [ValuesArr, setValuesArr] = useState([
+  const [ordersInformation, setOrderInformation] = useState([
     {
       title: "UX/UI-дизайнер для разработки прототипа интернет-магазина",
-      oneText: "Можно выполнить удаленно",
-      twoText: "Начать 28 февраля, 00:00",
-      price: "261 TON",
-      rublPrice: "52 200 RUB",
+      executionPlace: "Можно выполнить удаленно",
+      startTime: "Начать 28 февраля, 00:00",
+      tonPrice: "261 TON",
+      rublesPrice: "52 200 RUB",
       fullDescription : "Необходимо разработать логотип для магазина! Пример стиля, и пример лого, от которого отталкиваться - предоставлю.",
-      dedline : "Воскресенье, 10 марта 2024б 23:59",
+      dedline : "Воскресенье, 10 марта 2024 23:59",
       rate : '5',
-      name : 'YourName',
-      isActive : 'true',
-      time : 'Создано когда-то , ..timing',
-      watches : '51 просмотр'
+      customerName : 'YourName',
+      isActive : true,
+      creationTime : 'Создано когда-то , ..timing',
+      viewsNumber : '51'
     },
     {
       title: "UX/UI-дизайнер для разработки прототипа интернет-магазина",
-      oneText: "Можно выполнить удаленно",
-      twoText: "Начать 28 февраля, 00:00",
-      price: "261 TON",
-      rublPrice: "52 200 RUB",
+      executionPlace: "Можно выполнить удаленно",
+      startTime: "Начать 28 февраля, 00:00",
+      tonPrice: "261 TON",
+      rublesPrice: "52 200 RUB",
+      fullDescription : "Необходимо разработать логотип для магазина! Пример стиля, и пример лого, от которого отталкиваться - предоставлю.",
+      dedline : "Воскресенье, 10 марта 2024 23:59",
+      rate : '5',
+      customerName : 'YourName',
+      isActive : true,
+      creationTime : 'Создано когда-то , ..timing',
+      viewsNumber : '51'
     },
     {
       title: "UX/UI-дизайнер для разработки прототипа интернет-магазина",
-      oneText: "Можно выполнить удаленно",
-      twoText: "Начать 28 февраля, 00:00",
-      price: "261 TON",
-      rublPrice: "52 200 RUB",
+      executionPlace: "Можно выполнить удаленно",
+      startTime: "Начать 28 февраля, 00:00",
+      tonPrice: "261 TON",
+      rublesPrice: "52 200 RUB",
+      fullDescription : "Необходимо разработать логотип для магазина! Пример стиля, и пример лого, от которого отталкиваться - предоставлю.",
+      dedline : "Воскресенье, 10 марта 2024 23:59",
+      rate : '5',
+      customerName : 'YourName',
+      isActive : true,
+      creationTime : 'Создано когда-то , ..timing',
+      viewsNumber : '51'
     },
   ]);
 
@@ -47,39 +61,26 @@ const First = () => {
     return res
   }
 
+  const [isMenuActive, setMenuActive] = useState(false);
 
-  // useEffect( () => {
-  //   setValuesArr ( myFync().data )    
-  // }, []); 
+  const [filterBy, setFilterBy] = useState("");
 
+  const filteredArr = useFilteredArr(ordersInformation , filterBy)
 
-
-
-  const [activeMenu, setActiveMenu] = useState(false);
-
-  const [filterBy, setfilterBy] = useState("");
-
-
-  // const filteredArr = useMemo(() => {
-  //   return ValuesArr.filter((e) =>
-  //     e.title.toLowerCase().includes(filterBy.toLowerCase())
-  //   );
-  // }, [filterBy, ValuesArr]);
-  const filteredArr = useFilteredArr(ValuesArr , filterBy)
-
-  const [isDetailsActive, setIsDetailsActive] = useState(false);
+  const [isDetailsActive, setDetailsActive] = useState(false);
 
   
   return (
     <div className="First">
 
-      <FirstTop setActiveMenu={setActiveMenu} setSortBy={setfilterBy} />
+      <FirstTop setMenuActive={setMenuActive} setFilterBy = {setFilterBy} />
 
-      <FirstMain setIsDetailsActive={setIsDetailsActive} ValuesArr = {filteredArr}  />
+      <FirstMain setDetailsActive = {setDetailsActive} ordersInformation = {filteredArr}  />
 
-      <FirstMenu activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
+      <FirstMenu isMenuActive={isMenuActive} setMenuActive={setMenuActive} />
 
-      <FirstDetails isDetailsActive = {isDetailsActive}   ValuesArr = {ValuesArr[0]}  similarAds = {ValuesArr}  />
+      <FirstDetails isDetailsActive = {isDetailsActive} orderInformation = {ordersInformation[0]} similarAds = {ordersInformation}  />
+
     </div>
   );
 

@@ -3,8 +3,9 @@ import HumanIcon from '../../../images/icon.png'
 import Pensel from '../../../images/Pensel.png'
 import Dymond from '../../../images/dymond.png'
 import Human from '../../../images/human.png'
+import arrowUp from '../../../images/upArr.png'
 
-const FirstMenu = ({activeMenu , setActiveMenu, arrOfMenuValues}) => {
+const FirstMenu = ({isMenuActive , setMenuActive}) => {
     // const [ArrOfLinks , setArrOfLinks] = useState( { value : 'Создать задание' , href : './' },
     // { value : 'Найти задание' , href : './' },
     // { value : 'Создать задание' , href : './' },
@@ -13,8 +14,8 @@ const FirstMenu = ({activeMenu , setActiveMenu, arrOfMenuValues}) => {
     // { value : 'Новости Коннект.биржи' , href : './' },
     // {value : 'Стать исполнителем' , href : './'}) 
     return (
-        <div className= {  activeMenu ? 'FirstMenu'  :  'FirstMenu hidden'  }>
-            <div className='close'  onClick = {() => { setActiveMenu(!activeMenu)}  } >
+        <div className= {  isMenuActive ? 'FirstMenu'  :  'FirstMenu hidden'  }>
+            <div className='close'  onClick = {() => { setMenuActive(!isMenuActive)}  } >
                 <div className="close__container" style={{position : 'relative'}}>
                     <span></span>
                     <span></span>
@@ -31,6 +32,7 @@ const FirstMenu = ({activeMenu , setActiveMenu, arrOfMenuValues}) => {
                 </div>
             </div>
             <div className="MenuPrice">
+                <img className='upArr' src= {arrowUp} alt="" />
                 <p className='MenuTextPrice'>1 TON</p>
                 <img src= {Dymond} alt="" />
                 <p className='MenuTextRublePrice'>~   250 RUB</p>
