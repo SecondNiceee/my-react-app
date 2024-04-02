@@ -1,8 +1,11 @@
+@import './Values.scss';
 .First {
   display: flex;
   flex-direction: column;
   position: relative;
   overflow-x: hidden;
+  padding-left: calc(48px * (430/1180));
+  padding-right: calc(48px * (430/1180));
 }
 .EmptyText {
   color: rgb(255, 255, 255);
@@ -40,8 +43,8 @@
 .First__block {
   display: flex;
   flex-direction: column;
-  padding: calc(57px * 0.3644);
-  border-radius: 30px;
+  padding: calc(57px * $height) calc(57px * $height) calc(39px * $height) calc(52px * $height);
+  border-radius: calc(30px * $width);
   background: rgb(32, 48, 63);
     .FirstMain__top {
     display: flex;
@@ -148,7 +151,7 @@
     position: absolute;
     height: 100%;
 
-    left: -18px;
+    left: 0px;
     bottom: 0;
     width: calc(904px * 0.3644);
     padding: calc(81px * 0.4767) calc(48px * 0.3644);

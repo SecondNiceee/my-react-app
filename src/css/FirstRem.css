@@ -8,6 +8,8 @@
           flex-direction: column;
   position: relative;
   overflow-x: hidden;
+  padding-left: 17.4915254237px;
+  padding-right: 17.4915254237px;
 }
 
 .EmptyText {
@@ -63,8 +65,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20.7708px;
-  border-radius: 30px;
+  padding: 20.919px 20.919px 14.313px 19.084px;
+  border-radius: 10.932px;
   background: rgb(32, 48, 63);
 }
 .First__block .FirstMain__top {
@@ -197,7 +199,7 @@
   z-index: 10;
   position: absolute;
   height: 100%;
-  left: -18px;
+  left: 0px;
   bottom: 0;
   width: 329.4176px;
   padding: 38.6127px 17.4912px;

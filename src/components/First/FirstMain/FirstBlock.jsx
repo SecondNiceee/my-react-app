@@ -1,11 +1,11 @@
 import React from 'react';
-import DesignIcon from '../../images/Design-Icon.png'
-import Share from '../../images/LineShareIcon.png'
-import dymond from '../../images/dymond.png'
-import galstuk from '../../images/galstuk.png'
-import MyButton from '../UI/MyButton/MyButton';
+import DesignIcon from '../../../images/Design-Icon.png'
+import Share from '../../../images/LineShareIcon.png'
+import dymond from '../../../images/dymond.png'
+import galstuk from '../../../images/galstuk.png'
+import MyButton from '../../UI/MyButton/MyButton';
 
-const FirstBlock = ({title, oneText, twoText, price, rublPrice}) => {
+const FirstBlock = ({title, oneText, twoText, price, rublPrice , setIsDetailsActive , isButton}) => {
     return (
              <div className="First__block">
                 <div className="FirstMain__top">
@@ -31,7 +31,7 @@ const FirstBlock = ({title, oneText, twoText, price, rublPrice}) => {
                     </div>
                     <div className="FirstMain__bottom-right">
                         <img src={galstuk} alt="" />
-                        <MyButton>Подробнее</MyButton>
+                        <MyButton style = { isButton ? {} : {display : 'none'} }  onClick = { (e) => setIsDetailsActive(true)  }>Подробнее</MyButton>
                     </div>
                 </div>
             </div>

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import HumanIcon from '../../images/icon.png'
-import Pensel from '../../images/Pensel.png'
-import Dymond from '../../images/dymond.png'
-import Human from '../../images/human.png'
+import HumanIcon from '../../../images/icon.png'
+import Pensel from '../../../images/Pensel.png'
+import Dymond from '../../../images/dymond.png'
+import Human from '../../../images/human.png'
 
-const FirstMenu = ({activeMenu , setActiveMenu}) => {
+const FirstMenu = ({activeMenu , setActiveMenu, arrOfMenuValues}) => {
     // const [ArrOfLinks , setArrOfLinks] = useState( { value : 'Создать задание' , href : './' },
     // { value : 'Найти задание' , href : './' },
     // { value : 'Создать задание' , href : './' },

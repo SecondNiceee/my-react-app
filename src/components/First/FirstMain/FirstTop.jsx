@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Burger from "../UI/Burger/Burger";
-import OneInput from "../UI/OneInput/OneInput";
+import Burger from "../../UI/Burger/Burger";
+import OneInput from "../../UI/OneInput/OneInput";
 
-import icon from "../../images/icon.png";
+import icon from "../../../images/icon.png";
 const FirstTop = ( {setSortBy , setActiveMenu} ) => {
   const [inputValue, setInputValue] = useState("");
   return (
