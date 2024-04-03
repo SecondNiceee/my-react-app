@@ -1,0 +1,15 @@
+
+$height : 0.367;
+$width : 0.3644;
+
+
+@mixin greyText($fs){
+    /* Small Text */
+    color: rgb(149, 151, 158);
+    font-family: SF Pro Display;
+    font-size: calc($fs * $width);
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0%;
+    text-align: left;
+}

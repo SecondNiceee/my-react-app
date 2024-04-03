@@ -1,0 +1,30 @@
+.root {
+
+}
+.Cap{
+    display: flex;
+    gap: calc(332px * 0.3644);
+}
+.Cap p:nth-child(1){
+    /* Bold */
+    color: rgb(255, 255, 255);
+    font-family: "SF Pro Display";
+    font-size: calc(53px * 0.3644) ;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.Cap p:nth-child(2){
+    /* Bold */
+    color: rgb(255, 255, 255);
+    font-family: "SF Pro Display";
+    font-size: calc(53px * 0.3644) ;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0%;
+    text-align: left;
+    span{
+        color: rgb(149, 151, 158)
+    };
+}

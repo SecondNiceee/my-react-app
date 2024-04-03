@@ -1,0 +1,9 @@
+@import './Values/reset';
+@import './Values/Values.scss';
+@import './First/_FirstRem.scss';
+@import './First/_TaskDetails.scss';
+.MainContainer{
+    background: rgb(24, 34, 45);
+    max-width: 430px;
+    height: 800px;
+}
