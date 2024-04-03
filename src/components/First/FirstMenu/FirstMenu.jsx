@@ -4,6 +4,7 @@ import Pensel from '../../../images/Pensel.png'
 import Dymond from '../../../images/dymond.png'
 import Human from '../../../images/human.png'
 import arrowUp from '../../../images/upArr.png'
+import Close from './Close';
 
 const FirstMenu = ({isMenuActive , setMenuActive}) => {
     // const [ArrOfLinks , setArrOfLinks] = useState( { value : 'Создать задание' , href : './' },
@@ -15,12 +16,7 @@ const FirstMenu = ({isMenuActive , setMenuActive}) => {
     // {value : 'Стать исполнителем' , href : './'}) 
     return (
         <div className= {  isMenuActive ? 'FirstMenu'  :  'FirstMenu hidden'  }>
-            <div className='close'  onClick = {() => { setMenuActive(!isMenuActive)}  } >
-                <div className="close__container" style={{position : 'relative'}}>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+            <Close isMenuActive = {isMenuActive} setMenuActive = {setMenuActive}  />
             <div className="FirstMenu__top">
                 <img src= {HumanIcon} alt="" />
                 <div className="FirstMenu__top-right">

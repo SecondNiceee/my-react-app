@@ -4,12 +4,12 @@ import galks from '../../../images/Subtract.png'
 import Star from '../../../images/Star.png'
 const Customer = ({customerName, rate}) => {
     return (
-        <div className='customerContainer'>
+        <div className = 'customerContainer'>
             <p className='customer__up'>Заказчик</p>
             <div className="customer__information">
                 <img className='information-icon' src={icon} alt="" />
                 <div className="customer__information-right">
-                    <div className="customer__information-right-customerName">
+                    <div className="customer__information-right-name">
                         <p>{customerName}</p>
                         <img src= {galks} alt="" />
                     </div>
