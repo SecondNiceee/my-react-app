@@ -1,29 +1,44 @@
-input[type="datetime-local"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
 
-/* Скрытие стрелочки для выбора даты/времени */
-input[type="datetime-local"]::-webkit-inner-spin-button,
-input[type="datetime-local"]::-webkit-calendar-picker-indicator {
-  display: none;
-}
+    input[type="datetime-local"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #333;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+    }
 
-/* Стилизация фона и текста для выбранной даты/времени */
-input[type="datetime-local"]::-webkit-datetime-edit {
-  padding: 10px;
-  background-color: #f9f9f9;
-  color: #333;
-}
+    /* Remove default styling */
 
-/* Стилизация фокусированного состояния */
-input[type="datetime-local"]:focus {
-  outline: none;
-  border-color: #007bff; /* Цвет выбранный вами */
-}
+
+
+    
+    input[type="datetime-local"]::-webkit-datetime-edit,
+    input[type="datetime-local"]::-webkit-inner-spin-button,
+    input[type="datetime-local"]::-webkit-clear-button {
+        display: none;
+    }
+
+    input[type="datetime-local"]::-webkit-inner-spin-button,
+    input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+      display: none;
+    }
+    
+    /* Стилизация фона и текста для выбранной даты/времени */
+    input[type="datetime-local"]::-webkit-datetime-edit {
+      padding: 10px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    /* Стилизация фокусированного состояния */
+    input[type="datetime-local"]:focus {
+      outline: none;
+      border-color: #007bff; /* Цвет выбранный вами */
+    }
+    
+
+
