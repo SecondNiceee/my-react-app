@@ -21,11 +21,10 @@ const router = createBrowserRouter ([
 function App() {
   return (
     <div className="MainContainer">
-      {/* <BrowserRouter>
+     <BrowserRouter>
           <First/>
           <AdCreating />
-      </BrowserRouter> */}
-      <AdCreating />
+      </BrowserRouter> 
      </div>
   );
 }
