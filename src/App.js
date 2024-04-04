@@ -23,7 +23,7 @@ function App() {
     <div className="MainContainer">
 
           {/* <First/> */}
-          <AdCreating />
+          <AdCreatinrg />
 
      </div>
   );

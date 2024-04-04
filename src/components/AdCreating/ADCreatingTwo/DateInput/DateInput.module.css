@@ -1,20 +1,29 @@
 input[type="datetime-local"] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border: 2px solid #3498db;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 16px;
-    background-color: #f1f1f1;
-    color: #333;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
+/* Скрытие стрелочки для выбора даты/времени */
+input[type="datetime-local"]::-webkit-inner-spin-button,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* Стилизация фона и текста для выбранной даты/времени */
+input[type="datetime-local"]::-webkit-datetime-edit {
+  padding: 10px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Стилизация фокусированного состояния */
 input[type="datetime-local"]:focus {
-    outline: none;
-    border-color: #2ecc71;
-}
-
-input[type="datetime-local"]::placeholder {
-    color: #999;
+  outline: none;
+  border-color: #007bff; /* Цвет выбранный вами */
 }
