@@ -1,0 +1,13 @@
+.SecondAddCreating{
+    display: flex;
+    flex-direction: column;
+}
+.Cap {
+    margin-top: calc(70px * 0.367);
+}
+.Budget{
+    margin-top: calc(55px * 0.367);
+}
+.DatePicker{
+    margin-top: calc(86px * 0.367);
+}

@@ -1,4 +1,8 @@
-
+.normail{
+    align-self: center;
+    line-height: 0;
+    margin-top: 4px;
+}
 .First {
   display: flex;
   flex-direction: column;
@@ -50,8 +54,6 @@
     .FirstMain__top {
     display: flex;
         img {
-      width: calc(96px * 0.3644);
-      height: calc(96px * 0.3644);
       margin-right: calc(30px * 0.3644);
         }
         p {
@@ -133,16 +135,14 @@
             text-align: left;
         }
         img{
-            width: calc(65px * 0.3644);
-            height: calc(65px * 0.3644);
         }
     }
     .FirstMain__bottom-right{
         display: flex;
         gap: calc(23px * 0.3644);
-        img{
-            width: calc(84px * 0.3644);
-            height: calc(84px * 0.3644);
+        .tie{
+            align-self: center;
+            line-height: 0;
         }
     }
 }
@@ -159,6 +159,10 @@
     display: flex;
     flex-direction: column;
     transition: 0.5s;
+    .icon{
+        width: calc(160px * 0.367);
+        height: calc(160px * 0.367);
+    }
     &.hidden{
         left: -100%;
     }
@@ -166,10 +170,6 @@
         display: flex;
         align-items: center;
         gap: calc(40px * 0.3644);
-        img{
-            width: calc(160px * 0.3644);
-            height: calc(160px * 0.3644);
-        }
     }
     .FirstMenu__top-right{
         display: flex;
@@ -190,10 +190,6 @@
         display: flex;
         gap: 5px;
         align-items: center;
-        img{
-            width: calc(31px * 0.3644);
-            height: calc(31px * 0.3644);
-        }
         p{
             color: rgb(218, 245, 254);
             font-family: "SF Pro Display";
@@ -217,16 +213,15 @@
         align-items: center;
         align-self: flex-start;
         position: relative;
-        img{
-            width: calc(65px * 0.3644);
-            height: calc(65px * 0.3644);
-        }
         .upArr{
             position: absolute;
             top: calc(18px * $height);
             right: calc(18px * $width);
             width: calc(14px * $width);
             height: calc(14px * $width);
+        }
+        .dymond{
+            margin-top: 1px;
         }
     }
     .MenuTextPrice{

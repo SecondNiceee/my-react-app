@@ -1,0 +1,21 @@
+.inputCounter{
+    position: absolute;
+    /* Small Text */
+    color: rgb(149, 151, 158);
+    font-family: "SF Pro Display";
+    font-size: calc(35px * 0.367);
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0%;
+    text-align: left;
+    right: calc(49px * 0.367);
+    bottom: calc(46px * 0.367);
+    width: fit-content;
+}
+.DescriptionInput{
+    width: 100%;
+    min-height: calc(410px * 0.367);
+}
+.InputContainer{
+    position: relative;
+}

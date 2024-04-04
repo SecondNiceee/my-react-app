@@ -3,6 +3,7 @@ import FirstBlock from '../FirstMain/FirstBlock';
 import TaskDetailsContainer from './TaskDetailsContainer';
 import TimeAndWatches from './TimeAndWatches';
 import SimilarAds from './SimilarAds';
+
 const FirstDetails = ({orderInformation , similarAds , isDetailsActive}) => {
     return (
         <div className  =  {isDetailsActive ? 'TaskDetails active' : 'TaskDetails'} >

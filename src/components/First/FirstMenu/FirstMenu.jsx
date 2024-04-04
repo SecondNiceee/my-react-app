@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import HumanIcon from '../../../images/icon.png'
-import Pensel from '../../../images/Pensel.png'
 import Dymond from '../../../images/dymond.png'
-import Human from '../../../images/human.png'
 import arrowUp from '../../../images/upArr.png'
 import Close from './Close';
-
+import SmallDimond from '../../UI/SmallDimond/SmallDimond';
+import UpArr from '../../UI/UpArr/UpArr';
+import Human from '../../UI/Human/Human'
+import Pensel from '../../UI/Pencel/Pencel'
 const FirstMenu = ({isMenuActive , setMenuActive}) => {
     // const [ArrOfLinks , setArrOfLinks] = useState( { value : 'Создать задание' , href : './' },
     // { value : 'Найти задание' , href : './' },
@@ -18,19 +19,19 @@ const FirstMenu = ({isMenuActive , setMenuActive}) => {
         <div className= {  isMenuActive ? 'FirstMenu'  :  'FirstMenu hidden'  }>
             <Close isMenuActive = {isMenuActive} setMenuActive = {setMenuActive}  />
             <div className="FirstMenu__top">
-                <img src= {HumanIcon} alt="" />
+                <img className='icon' src= {HumanIcon} alt="" />
                 <div className="FirstMenu__top-right">
                     <p className='MenuName'>Nedzelskiy</p>
                     <div className='MenuProfile'>
                         <p>Профиль</p>
-                        <img src = {Pensel} alt="" />
+                        <Pensel className='normail' />
                     </div>
                 </div>
             </div>
             <div className="MenuPrice">
-                <img className='upArr' src= {arrowUp} alt="" />
+                <UpArr className= 'upArr' /> 
                 <p className='MenuTextPrice'>1 TON</p>
-                <img src= {Dymond} alt="" />
+                 <SmallDimond className= 'dymond' /> 
                 <p className='MenuTextRublePrice'>~   250 RUB</p>
             </div>
             <div className='MenuList'>
@@ -43,7 +44,7 @@ const FirstMenu = ({isMenuActive , setMenuActive}) => {
             </div>
             <div className="Menu__Helps">
                 <a className='' href="">Поддержка </a>
-                <img src= {Human} alt="" />
+                <Human />
             </div>
 
         </div>

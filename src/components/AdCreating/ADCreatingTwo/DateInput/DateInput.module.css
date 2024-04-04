@@ -1,0 +1,20 @@
+input[type="datetime-local"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+input[type="datetime-local"]:focus {
+    outline: none;
+    border-color: #2ecc71;
+}
+
+input[type="datetime-local"]::placeholder {
+    color: #999;
+}

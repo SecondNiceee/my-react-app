@@ -3,7 +3,7 @@
 }
 .Cap{
     display: flex;
-    gap: calc(332px * 0.3644);
+    justify-content: space-between;
 }
 .Cap p:nth-child(1){
     /* Bold */

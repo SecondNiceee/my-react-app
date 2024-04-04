@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { memo } from 'react';
 import cl from './CreateInput.module.css'
-const CreateInput = ({className , ...props}) => {
+const CreateInput = ({className , value , setValue ,  ...props }) => {
+
+
     return (
-        <input className = {className ? [cl.CreateInput , className] : cl.CreateInput} type="text" {...props}  />
+        <input value={value} onChange={(e) => {
+            setValue(e.target.value)}} className = {className ? [cl.CreateInput , className].join(' ') : cl.CreateInput} type="text" {...props}  />
     );
 };
 
-export default CreateInput;
+export default memo(CreateInput);

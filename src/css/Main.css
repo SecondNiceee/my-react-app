@@ -6,6 +6,13 @@
   border: none;
 }
 
+.normail {
+  -ms-flex-item-align: center;
+      align-self: center;
+  line-height: 0;
+  margin-top: 4px;
+}
+
 .First {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,8 +89,6 @@
   display: flex;
 }
 .First__block .FirstMain__top img {
-  width: 34.9824px;
-  height: 34.9824px;
   margin-right: 10.932px;
 }
 .First__block .FirstMain__top p {
@@ -186,19 +191,16 @@
   letter-spacing: 0%;
   text-align: left;
 }
-.First__block .FirstMain__price-up img {
-  width: 23.686px;
-  height: 23.686px;
-}
 .First__block .FirstMain__bottom-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 8.3812px;
 }
-.First__block .FirstMain__bottom-right img {
-  width: 30.6096px;
-  height: 30.6096px;
+.First__block .FirstMain__bottom-right .tie {
+  -ms-flex-item-align: center;
+      align-self: center;
+  line-height: 0;
 }
 
 .FirstMenu {
@@ -220,6 +222,10 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+.FirstMenu .icon {
+  width: 58.72px;
+  height: 58.72px;
+}
 .FirstMenu.hidden {
   left: -100%;
 }
@@ -231,10 +237,6 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 14.576px;
-}
-.FirstMenu .FirstMenu__top img {
-  width: 58.304px;
-  height: 58.304px;
 }
 .FirstMenu .FirstMenu__top-right {
   display: -webkit-box;
@@ -265,10 +267,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.FirstMenu .MenuProfile img {
-  width: 11.2964px;
-  height: 11.2964px;
-}
 .FirstMenu .MenuProfile p {
   color: rgb(218, 245, 254);
   font-family: "SF Pro Display";
@@ -297,16 +295,15 @@
       align-self: flex-start;
   position: relative;
 }
-.FirstMenu .MenuPrice img {
-  width: 23.686px;
-  height: 23.686px;
-}
 .FirstMenu .MenuPrice .upArr {
   position: absolute;
   top: 6.606px;
   right: 6.5592px;
   width: 5.1016px;
   height: 5.1016px;
+}
+.FirstMenu .MenuPrice .dymond {
+  margin-top: 1px;
 }
 .FirstMenu .MenuTextPrice {
   /* TON Price */

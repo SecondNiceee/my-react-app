@@ -5,20 +5,28 @@ import "./css/Main.css";
 import "./css/Fonts.css"
 import AdCreating from "./pages/AdCreating/AdCreating";
 
+import { BrowserRouter, createBrowserRouter , Route, RouterProvider, Routes } from "react-router-dom";
+import FirstDetails from "./components/First/FirstDetails/FirstDetails";
+
+const router = createBrowserRouter ([
+  {
+    path : '/',
+    element :  <First /> 
+  },
+  {
+    path : '/AdCreating',
+    element : <AdCreating />
+  }
+])
 function App() {
   return (
     <div className="MainContainer">
-
-      {/* <Routes>
-        <Route path="/" element = {
+      {/* <BrowserRouter>
           <First/>
-        }></Route>
-      </Routes> */}
-
-{/*       
-      <First /> */}
+          <AdCreating />
+      </BrowserRouter> */}
       <AdCreating />
-    </div>
+     </div>
   );
 }
 
