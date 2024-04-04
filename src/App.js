@@ -10,21 +10,21 @@ import FirstDetails from "./components/First/FirstDetails/FirstDetails";
 
 const router = createBrowserRouter ([
   {
-    path : '/',
+    path : '/AdCreating',
     element :  <First /> 
   },
   {
-    path : '/AdCreating',
+    path : '/',
     element : <AdCreating />
   }
 ])
 function App() {
   return (
     <div className="MainContainer">
-     <BrowserRouter>
-          <First/>
+
+          {/* <First/> */}
           <AdCreating />
-      </BrowserRouter> 
+
      </div>
   );
 }
