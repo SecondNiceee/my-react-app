@@ -18,9 +18,9 @@ const router = createBrowserRouter ([
 ])
 
 ReactDOM.render(
-        <App />,
+    //     <App />,
 
-    document.getElementById('root')
+    // document.getElementById('root')
 );
 
 
