@@ -5,13 +5,13 @@ import galstuk from '../../../images/galstuk.png'
 import MyButton from '../../UI/MyButton/MyButton';
 
 type BlockPropsType = {
-    title: string,
-    executionPlace: number,
-    startTime: string,
-    tonPrice: number,
-    rublesPrice: number,
-    setDetailsActive: any,
-    isButton: boolean
+    title?: string,
+    executionPlace?: string,
+    startTime?: string,
+    tonPrice?: string,
+    rublesPrice?: string,
+    setDetailsActive?: any,
+    isButton?: boolean
 }
 
 const FirstBlock = ({title, executionPlace, startTime, tonPrice, rublesPrice , setDetailsActive , isButton}: BlockPropsType) => {

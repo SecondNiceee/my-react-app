@@ -14,12 +14,12 @@ const First = () => {
       tonPrice: "261 TON",
       rublesPrice: "52 200 RUB",
       fullDescription : "Необходимо разработать логотип для магазина! Пример стиля, и пример лого, от которого отталкиваться - предоставлю.",
-      dedline : "Воскресенье, 10 марта 2024 23:59",
+      deadline : "Воскресенье, 10 марта 2024 23:59",
       rate : '5',
       customerName : 'YourName',
       isActive : true,
       creationTime : 'Создано когда-то , ..timing',
-      viewsNumber : '51'
+      viewsNumber : 51
     },
     {
       title: "UX/UI-дизайнер для разработки прототипа интернет-магазина",
@@ -28,12 +28,12 @@ const First = () => {
       tonPrice: "261 TON",
       rublesPrice: "52 200 RUB",
       fullDescription : "Необходимо разработать логотип для магазина! Пример стиля, и пример лого, от которого отталкиваться - предоставлю.",
-      dedline : "Воскресенье, 10 марта 2024 23:59",
+      deadline : "Воскресенье, 10 марта 2024 23:59",
       rate : '5',
       customerName : 'YourName',
       isActive : true,
       creationTime : 'Создано когда-то , ..timing',
-      viewsNumber : '51'
+      viewsNumber : 51
     },
     {
       title: "UX/UI-дизайнер для разработки прототипа интернет-магазина",
@@ -42,18 +42,14 @@ const First = () => {
       tonPrice: "261 TON",
       rublesPrice: "52 200 RUB",
       fullDescription : "Необходимо разработать логотип для магазина! Пример стиля, и пример лого, от которого отталкиваться - предоставлю.",
-      dedline : "Воскресенье, 10 марта 2024 23:59",
+      deadline : "Воскресенье, 10 марта 2024 23:59",
       rate : '5',
       customerName : 'YourName',
       isActive : true,
       creationTime : 'Создано когда-то , ..timing',
-      viewsNumber : '51'
+      viewsNumber : 51
     },
   ]);
-
-
-  
-
 
   
 

@@ -3,31 +3,25 @@ import TimeAndWatches from './TimeAndWatches';
 import SimilarAds from './SimilarAds';
 
 type DetailsPropType = {
-    orderInformation: {
-        fullDescription: string,
-        deadline: string,
-        customerName: string,
-        rate: string,
-        isActive: boolean,
-        title: string,
-        executionPlace: number,
-        startTime: string,
-        tonPrice: number,
-        rublesPrice: number,
-        setDetailsActive: any,
-        isButton: boolean,
-        time: string,
-        watches: number
-    },
-    similarAds: string,
-    isDetailsActive: boolean
+    title: string,
+    executionPlace: string,
+    startTime: string,
+    tonPrice: string,
+    rublesPrice: string,
+    fullDescription : string,
+    deadline : string,
+    rate : string,
+    customerName : string,
+    isActive : boolean,
+    creationTime : string,
+    viewsNumber : number
 }
 
-const FirstDetails = ({orderInformation , similarAds , isDetailsActive}: DetailsPropType) => {
+const FirstDetails = ({orderInformation, similarAds, isDetailsActive}: { orderInformation: DetailsPropType, similarAds: DetailsPropType[], isDetailsActive: boolean }) => {
     return (
         <div className  =  {isDetailsActive ? 'TaskDetails active' : 'TaskDetails'} >
             <TaskDetailsContainer  orderInformation = {orderInformation} />
-            <TimeAndWatches time={orderInformation.time} watches={orderInformation.watches} />
+            <TimeAndWatches time={orderInformation.startTime} watches={orderInformation.viewsNumber} />
             <SimilarAds similarAds = {[]} />
 
         </div>
