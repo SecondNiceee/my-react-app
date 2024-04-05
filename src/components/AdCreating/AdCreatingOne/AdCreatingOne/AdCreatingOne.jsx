@@ -8,7 +8,7 @@ import MakePrivate from "../MakePrivate/MakePrivate";
 const AdCreatingOne = ( {taskInformation ,setTaskInformation }) => {
   return (
       <div className={cl.AdCreating}>
-        <Cap step={1} className={cl.Cap} />
+        <Cap step={1} className={cl.Cap} > <p className = {cl.CapText}> Создайте объявление </p> </Cap>
         <Categories className={cl.Categories} />
         <TaskName taskInformation = {taskInformation} setTaskInformation = {setTaskInformation} />
         <DescriptionAndPhoto taskInformation={taskInformation}  setTaskInformation={setTaskInformation} className={cl.DescriptionAndPhoto} />

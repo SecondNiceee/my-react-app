@@ -2,8 +2,8 @@ import React from 'react';
 import cl from './FileInput.module.css'
 const FileInput = ({className}) => {
     return (
-        <label for="file" >
-            <div class={className ? [cl.FileInput, className] : cl.FileInput }>
+        <label htmlFor="file" >
+            <div className={className ? [cl.FileInput, className].join(' ') : cl.FileInput }>
                 <p>Добавить фото</p>
                 <input type="file"  id="file" class= {cl.none}/>
             </div>

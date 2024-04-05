@@ -6,7 +6,7 @@ import DatePicker from '../DatePicker/DatePicker';
 const SecondAddCreating = ({taskInformation , setTaskInformation}) => {
     return (
         <div className = {cl.SecondAddCreating}>
-            <Cap className={cl.Cap}  step={2} />
+            <Cap className={cl.Cap}  step={2} > <p className = {cl.CapText}> Создайте объявление </p> </Cap>
             <Budget taskInformation={taskInformation} setTaskInformation={setTaskInformation}  className={cl.Budget} />
             <DatePicker taskInformation={taskInformation} setTaskInformation={setTaskInformation} className={cl.DatePicker} />
         </div>
