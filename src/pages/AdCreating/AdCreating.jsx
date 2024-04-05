@@ -20,7 +20,7 @@ const AdCreating = () => {
         const data = await response.json();
         const result = await data;
         console.log('Был вызов!!Снижение производительности!')
-        setDollarValue(result.Valute.USD.Value);
+        return(result.Valute.USD.Value)
     }
 
     async function getTonPrice() {
