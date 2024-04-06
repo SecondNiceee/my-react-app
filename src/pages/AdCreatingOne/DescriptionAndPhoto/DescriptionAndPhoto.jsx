@@ -1,9 +1,9 @@
 import React from "react";
 import cl from "./DescriptionAndPhoto.module.css";
-import GreyText from "../../../UI/GreyText/GreyText";
-import CreateInput from "../../../UI/CreateInput/CreateInput";
-import FileInput from "../../../UI/FileInput/FileInput";
-import TextArea from "../../../UI/TextArea/TextArea";
+import GreyText from "../../../components/UI/GreyText/GreyText";
+import CreateInput from "../../../components/UI/CreateInput/CreateInput";
+import FileInput from "../../../components/UI/FileInput/FileInput";
+import TextArea from "../../../components/UI/TextArea/TextArea";
 const DescriptionAndPhoto = ({
   className,
   taskInformation,

@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import cl from './MakePrivate.module.css'
-import Switcher from '../../../UI/Switcher/Switcher';
+import Switcher from '../../../components/UI/Switcher/Switcher';
 const MakePrivate = ({className , isPrivate , setTaskInformation , taskInformation}) => {
     return (
         <div className="Private__container">

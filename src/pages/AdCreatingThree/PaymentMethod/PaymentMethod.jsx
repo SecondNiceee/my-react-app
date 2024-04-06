@@ -1,7 +1,7 @@
 import React from 'react';
 import cl from './MethodPayment.module.css'
-import valletIcon from '../../../../images/icons/vallet.svg'
-import upDown from '../../../../images/icons/UpDown.svg'
+import valletIcon from '../../../images/icons/vallet.svg'
+import upDown from '../../../images/icons/UpDown.svg'
 const PaymentMethod = ({className}) => {
     return (
         <div className={className ? [cl.PaymentMethod , className].join(' ') : cl.PaymentMethod}>

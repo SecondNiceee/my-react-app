@@ -1,12 +1,12 @@
 import React from "react";
 import cl from "./AdCreatingThree.module.css";
-import Cap from "../../UI/Cap/Cap";
-import info from '../../../images/icons/info.svg'
+import Cap from "../../components/UI/Cap/Cap";
+import info from '../../images/icons/info.svg'
 import PaymentMethod from "./PaymentMethod/PaymentMethod";
 import Holding from "./Holding/Holding";
-const AdCreatingThree = () => {
+const AdCreatingThree = ({taskInformation}) => {
   return (
-    <div>
+    <div className= {cl.AdCreatingThree}>
       <Cap className={cl.Cap} step={3}>
         <div className={cl.upTextContainer}>
             <p>Холдирование</p>
@@ -14,7 +14,7 @@ const AdCreatingThree = () => {
         </div>
       </Cap>
       <PaymentMethod className={cl.PaymentMethod} />
-      <Holding className={cl.Holding} />
+      <Holding taskInformation={taskInformation}  className={cl.Holding} />
     </div>
   );
 };

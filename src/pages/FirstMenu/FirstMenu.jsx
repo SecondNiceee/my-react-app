@@ -1,21 +1,15 @@
 import React, { useState } from 'react';
-import HumanIcon from '../../../images/icon.png'
-import Dymond from '../../../images/dymond.png'
-import arrowUp from '../../../images/upArr.png'
+import HumanIcon from '../../images/icon.png'
+import {Link, Outlet} from 'react-router-dom'
 import Close from './Close';
-import SmallDimond from '../../UI/SmallDimond/SmallDimond';
-import UpArr from '../../UI/UpArr/UpArr';
-import Human from '../../UI/Human/Human'
-import Pensel from '../../UI/Pencel/Pencel'
+import SmallDimond from '../../components/UI/SmallDimond/SmallDimond';
+import UpArr from '../../components/UI/UpArr/UpArr';
+import Human from '../../components/UI/Human/Human'
+import Pensel from '../../components/UI/Pencel/Pencel'
 const FirstMenu = ({isMenuActive , setMenuActive}) => {
-    // const [ArrOfLinks , setArrOfLinks] = useState( { value : 'Создать задание' , href : './' },
-    // { value : 'Найти задание' , href : './' },
-    // { value : 'Создать задание' , href : './' },
-    // { value : 'Мои задание' , href : './' },
-    // { value : 'Уведомления' , href : './' },
-    // { value : 'Новости Коннект.биржи' , href : './' },
-    // {value : 'Стать исполнителем' , href : './'}) 
+
     return (
+        <>
         <div className= {  isMenuActive ? 'FirstMenu'  :  'FirstMenu hidden'  }>
             <Close isMenuActive = {isMenuActive} setMenuActive = {setMenuActive}  />
             <div className="FirstMenu__top">
@@ -28,14 +22,19 @@ const FirstMenu = ({isMenuActive , setMenuActive}) => {
                     </div>
                 </div>
             </div>
+
+
             <div className="MenuPrice">
                 <UpArr className= 'upArr' /> 
                 <p className='MenuTextPrice'>1 TON</p>
                  <SmallDimond className= 'dymond' /> 
                 <p className='MenuTextRublePrice'>~   250 RUB</p>
             </div>
+
+
+
             <div className='MenuList'>
-                <a href="">Создать задание</a>
+                <Link onClick={(e) => {setMenuActive(false)}}  to="/AdCreatingOne" >Создать задание</Link>
                 <a href="">Найти задания</a>
                 <a href="">Мои задания</a>
                 <a href="">Уведомления</a>
@@ -48,6 +47,8 @@ const FirstMenu = ({isMenuActive , setMenuActive}) => {
             </div>
 
         </div>
+        <Outlet />
+        </>
     );
 };
 

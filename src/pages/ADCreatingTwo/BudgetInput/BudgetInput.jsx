@@ -1,8 +1,8 @@
 import React, { memo } from "react";
 import cl from "./BudgetInput.module.css";
-import Info from "../../../../images/icons/info.svg";
+import Info from "../../../images/icons/info.svg";
 
-const BudgetInput = ({ className, setBudget, budget }) => {
+const BudgetInput = ({ className, setBudget, budget , tonValue , setTonValue, tonConstant }) => {
   const KisInteger = function (obj) {
     return "0123456789".includes(obj[obj.length - 1]);
   };
@@ -10,14 +10,12 @@ const BudgetInput = ({ className, setBudget, budget }) => {
   function format(strPar) {
     let str = strPar;
     if (str.length > 1) {
-
       if (str[0] === "0") {
         str = str.replace("0", "");
       }
-
     }
     str = str.replaceAll(" ", "").substring(0, 6);
-    console.log(str);
+  
     const s = str.length;
     const chars = str.split("");
     const strWithSpaces = chars.reduceRight((acc, char, i) => {
@@ -28,10 +26,10 @@ const BudgetInput = ({ className, setBudget, budget }) => {
     return strWithSpaces[0] === " " ? strWithSpaces.slice(1) : strWithSpaces;
   }
 
-  function budgetWidth(bg){
-    let str = bg.toString()
-    str = str.replaceAll(' ' , '')
-    return 'calc( ' + str.length.toString() + 'ch' + ' + 10px )'
+  function budgetWidth(bg) {
+    let str = bg.toString();
+    str = str.replaceAll(" ", "");
+    return "calc( " + str.length.toString() + "ch" + " + 10px )";
   }
   return (
     <div
@@ -40,7 +38,7 @@ const BudgetInput = ({ className, setBudget, budget }) => {
       }
     >
       <input
-        style={{width : ( budgetWidth(budget)   )}}
+        style={{ width: budgetWidth(budget) }}
         value={budget}
         onChange={(e) => {
           setBudget(
@@ -54,13 +52,13 @@ const BudgetInput = ({ className, setBudget, budget }) => {
           setBudget(e.target.value === "0" ? "" : e.target.value);
         }}
         onBlur={(e) => {
-          setBudget(e.target.value.length > 0 ? e.target.value : "0");
+           setBudget(e.target.value.length > 0 ? e.target.value : "0");
         }}
         className={cl.input}
       />
       <p className={cl.budgetText}>RUB</p>
       <div className={cl.bottomTextContainer}>
-        <p className={cl.text}> К  оплате {5} TON </p>
+        <p className={cl.text}> К оплате {tonValue} TON </p>
         <img src={Info} alt="" />
       </div>
     </div>

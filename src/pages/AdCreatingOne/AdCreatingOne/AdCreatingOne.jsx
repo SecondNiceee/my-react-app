@@ -1,12 +1,15 @@
 import React from "react";
 import cl from './AdCreatingOne.module.css'
-import Cap from '../../../UI/Cap/Cap'
+import Cap from '../../../components/UI/Cap/Cap'
 import Categories from "../Categories/Categories";
 import TaskName from "../TaskName/TaskName";
 import DescriptionAndPhoto from "../DescriptionAndPhoto/DescriptionAndPhoto";
 import MakePrivate from "../MakePrivate/MakePrivate";
+import ChoiceCategory from "../ChoiceCategory/ChoiceCategory";
+import {CSSTransition} from 'react-transition-group';
 const AdCreatingOne = ( {taskInformation ,setTaskInformation }) => {
   return (
+
       <div className={cl.AdCreating}>
         <Cap step={1} className={cl.Cap} > <p className = {cl.CapText}> Создайте объявление </p> </Cap>
         <Categories className={cl.Categories} />
@@ -18,7 +21,12 @@ const AdCreatingOne = ( {taskInformation ,setTaskInformation }) => {
           className={cl.MakePrivate}
           taskInformation={taskInformation}
         />
+
+        <ChoiceCategory/>
+
       </div>
+
+
   );
 };
 

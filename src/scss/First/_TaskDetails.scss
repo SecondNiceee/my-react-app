@@ -1,17 +1,37 @@
 
 .TaskDetails{
     position: absolute;
-    left: 110%;
+     left: 110%;
     top: 0;
     z-index: 10;
     width: 100%;
     height: 100%;
     background: rgb(24, 34, 45);
     padding: calc(56px * $height) calc( 48px * $width );
-    transition: 0.45s;
+    transition: 0.3s;
     &.active{
         left: 0%;
     }
+}
+.TaskDetails.entering{
+    opacity: 1;
+
+    left: 100%;
+}
+.TaskDetails.entered{
+    opacity: 1;
+
+    left: 0;
+}
+.TaskDetails.exiting{
+    opacity: 1;
+
+    left: 0;
+}
+.TaskDetails.exited{
+    opacity: 1;
+
+    left: 200%;
 }
 .Task__container-one{
     display: flex;
@@ -291,3 +311,30 @@
         gap: calc(35px * 0.4767);
     }
 }
+// .page {
+//     position: absolute;
+//     left: 15px;
+//     right: 15px;
+//   }
+  
+  .page-enter {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  
+  .page-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .page-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .page-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+  }

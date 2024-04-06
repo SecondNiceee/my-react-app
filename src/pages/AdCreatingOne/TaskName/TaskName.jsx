@@ -1,7 +1,7 @@
 import React from 'react';
 import cl from './TaskName.module.css'
-import GreyText from '../../../UI/GreyText/GreyText';
-import CreateInput from '../../../UI/CreateInput/CreateInput';
+import GreyText from '../../../components/UI/GreyText/GreyText';
+import CreateInput from '../../../components/UI/CreateInput/CreateInput';
 const TaskName = ({className , taskInformation , setTaskInformation , ...props}) => {
     return (
         <div {...props} className = { className ? [className , cl.TaskName].join(' ') : cl.TaskName}>

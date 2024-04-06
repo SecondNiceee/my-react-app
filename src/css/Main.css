@@ -411,11 +411,31 @@
   height: 100%;
   background: rgb(24, 34, 45);
   padding: 20.552px 17.4912px;
-  -webkit-transition: 0.45s;
-  transition: 0.45s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .TaskDetails.active {
   left: 0%;
+}
+
+.TaskDetails.entering {
+  opacity: 1;
+  left: 100%;
+}
+
+.TaskDetails.entered {
+  opacity: 1;
+  left: 0;
+}
+
+.TaskDetails.exiting {
+  opacity: 1;
+  left: 0;
+}
+
+.TaskDetails.exited {
+  opacity: 1;
+  left: 200%;
 }
 
 .Task__container-one {
@@ -796,6 +816,42 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 16.6845px;
+}
+
+.page-enter {
+  opacity: 0;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.page-enter-active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.page-exit-active {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
 }
 
 .MainContainer {

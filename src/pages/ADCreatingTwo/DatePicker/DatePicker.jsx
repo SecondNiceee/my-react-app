@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import cl from './DatePicker.module.css'
-import GreyText from '../../../UI/GreyText/GreyText';
+import GreyText from '../../../components/UI/GreyText/GreyText';
 import Picker from '../Picker/Picker';
 import CatchDate from '../CatchDate/CatchDate';
 
