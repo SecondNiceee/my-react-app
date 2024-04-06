@@ -21,11 +21,20 @@ import AdCreatingThree from "./pages/AdCreatingThree/AdCreatingThree";
 import FirstMenu from "./pages/FirstMenu/FirstMenu";
 import { useTon } from "./hooks/useTon";
 
-window.Telegram.WepApp.BackButton.isVisible = true;
-
-
+const tele = window.Telegram.WebApp;
+tele.BackButton.isVisible = true
 function App() {
-  window.Telegram.WepApp.BackButton.isVisible = true;
+  tele.BackButton.isVisible = true
+  // var BackButton = Telegram.WebApp.BackButton;
+  // BackButton.isVisible = true;
+  // BackButton.show();
+  // BackButton.onClick(function() {
+  //   WebApp.showAlert("Нет пути назад!");
+  //   BackButton.hide();
+  // });
+  // WebApp.onEvent('backButtonClicked', function() {
+  //   /* код */
+  // });
       const [taskInformation, setTaskInformation] = useState({
         category: "дизайн",
         subcategory: "дизайн сайтов и приложений",
