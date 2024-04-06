@@ -7,7 +7,6 @@ import { useFilteredArr } from "../../hooks/useFilteredArr";
 import { Transition } from 'react-transition-group'
 
 const First = ( {setMenuActive} ) => {
-  console.log('Был вызван First')
   const [ordersInformation, setOrderInformation] = useState([
     {
       title: "UX/UI-дизайнер для разработки прототипа интернет-магазина",
@@ -69,7 +68,6 @@ const First = ( {setMenuActive} ) => {
   
   return (
     <div className="First">
-      <a rel="stylesheet" href="/AdCreate" > Перейти </a>
        <FirstTop setMenuActive={setMenuActive} setFilterBy = {setFilterBy} />
 
       <FirstMain setDetailsActive = {setDetailsActive} ordersInformation = {filteredArr}  />

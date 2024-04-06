@@ -8,6 +8,7 @@ import MakePrivate from "../MakePrivate/MakePrivate";
 import ChoiceCategory from "../ChoiceCategory/ChoiceCategory";
 import {CSSTransition} from 'react-transition-group';
 const AdCreatingOne = ( {taskInformation ,setTaskInformation }) => {
+  
   return (
 
       <div className={cl.AdCreating}>
