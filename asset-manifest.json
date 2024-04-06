@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.6f561ad8.css",
-    "main.js": "./static/js/main.d68a8d1d.js",
+    "main.css": "./static/css/main.b53f1c27.css",
+    "main.js": "./static/js/main.3b76eb43.js",
     "static/media/sf-compact-rounded.ttf": "./static/media/sf-compact-rounded.5beab7105be2b1142b4b.ttf",
     "static/media/SF-Pro-Display-Medium.otf": "./static/media/SF-Pro-Display-Medium.b85d841dacb040b84951.otf",
     "static/media/Pencel.svg": "./static/media/Pencel.780cbeced38693cc2244ba795a5e72fd.svg",
@@ -14,11 +14,11 @@
     "static/media/Share.svg": "./static/media/Share.f0b0b0d5bd6293c49f2f911b0b2e70d9.svg",
     "static/media/UpDown.svg": "./static/media/UpDown.602fd0579eec9bf9d629c6c1c6531b83.svg",
     "static/media/upArr.svg": "./static/media/upArr.4020e5c688915ea551eab9f9a5c11931.svg",
-    "main.6f561ad8.css.map": "./static/css/main.6f561ad8.css.map",
-    "main.d68a8d1d.js.map": "./static/js/main.d68a8d1d.js.map"
+    "main.b53f1c27.css.map": "./static/css/main.b53f1c27.css.map",
+    "main.3b76eb43.js.map": "./static/js/main.3b76eb43.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f561ad8.css",
-    "static/js/main.d68a8d1d.js"
+    "static/css/main.b53f1c27.css",
+    "static/js/main.3b76eb43.js"
   ]
 }
