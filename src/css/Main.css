@@ -882,7 +882,7 @@
 }
 
 html, body {
-  overflow-x: hidden;
+  overflow: auto;
 }
 
 body {
@@ -898,4 +898,8 @@ body {
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }

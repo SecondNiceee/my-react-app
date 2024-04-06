@@ -5,9 +5,10 @@
 
 * {
     -webkit-tap-highlight-color: transparent;
+    // overflow: hidden;
   }
   html, body {
-    overflow-x: hidden;
+    overflow: auto;
   }
   body {
     position: relative
@@ -22,3 +23,4 @@
     overflow-x: hidden;
     overflow-y: hidden;
 }
+*::-webkit-scrollbar {display:none;}
