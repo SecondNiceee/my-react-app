@@ -881,6 +881,14 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
 .MainContainer {
   background: rgb(24, 34, 45);
   max-width: 430px;
@@ -889,4 +897,5 @@
   margin-right: auto;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
 }

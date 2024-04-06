@@ -24,13 +24,16 @@ import { useTon } from "./hooks/useTon";
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 function App() {
   var BackButton = window.Telegram.WebApp.BackButton;
-  BackButton.isVisible = true;
   BackButton.show();
   BackButton.onClick(function() {
     window.Telegram.WebApp.showAlert("Нет пути назад!");
     BackButton.hide();
   });
-  console.log(BackButton.isVisible)
+
+  window.Telegram.WebApp.expand()
+  window.Telegram.WebApp.backgroundColor = '#000000'
+  window.Telegram.WebApp.headerColor = '#ffffff'
+  console.log(window.Telegram.WebApp.backgroundColor)
   // var BackButton = Telegram.WebApp.BackButton;
   // BackButton.isVisible = true;
   // BackButton.show();
