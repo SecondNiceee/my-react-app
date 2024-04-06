@@ -22,6 +22,7 @@ import FirstMenu from "./pages/FirstMenu/FirstMenu";
 import { useTon } from "./hooks/useTon";
 
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
+window.Telegram.WebApp.expand()
 function App() {
   var BackButton = window.Telegram.WebApp.BackButton;
   BackButton.show();
@@ -29,11 +30,9 @@ function App() {
     window.Telegram.WebApp.showAlert("Нет пути назад!");
     BackButton.hide();
   });
-
-  window.Telegram.WebApp.expand()
-  window.Telegram.WebApp.backgroundColor = '#000000'
-  window.Telegram.WebApp.headerColor = '#ffffff'
-  console.log(window.Telegram.WebApp.backgroundColor)
+  window.Telegram.WebApp.setBackgroundColor('#000000')
+  window.Telegram.WebApp.setHeaderColor('#ffffff')
+  
   // var BackButton = Telegram.WebApp.BackButton;
   // BackButton.isVisible = true;
   // BackButton.show();
