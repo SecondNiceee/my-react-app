@@ -24,8 +24,8 @@ import { useTon } from "./hooks/useTon";
 <script   src="https://telegram.org/js/telegram-web-app.js"  ></script>
 
 function App() {
-  window.Telegram.WebApp.isVisible = true;
-  console.log(window.Telegram)
+  var BackButton = window.Telegram.WebApp.BackButton;
+  BackButton.show();
   // var BackButton = Telegram.WebApp.BackButton;
   // BackButton.isVisible = true;
   // BackButton.show();
@@ -90,7 +90,7 @@ function App() {
 
           {/* <AdCreatingTwo taskInformation={taskInformation} setTaskInformation={setTaskInformation} tonConstant = {tonConstant} />
           <AdCreatingThree taskInformation={taskInformation} setTaskInformation={setTaskInformation} /> */}
-
+          {BackButton.show()}
           <FirstMenu menuRef = {menuRef} isMenuActive={isMenuActive} setMenuActive={setMenuActive}  />
           <First setMenuActive={setMenuActive } isMenuActive={isMenuActive} />
         </div>

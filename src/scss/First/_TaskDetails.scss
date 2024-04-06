@@ -9,29 +9,22 @@
     background: rgb(24, 34, 45);
     padding: calc(56px * $height) calc( 48px * $width );
     transition: 0.3s;
+    left: 0;
     &.active{
         left: 0%;
     }
 }
 .TaskDetails.entering{
-    opacity: 1;
-
-    left: 100%;
+    transform: translateX(100%);
 }
 .TaskDetails.entered{
-    opacity: 1;
-
-    left: 0;
+    transform: translateX(0%);
 }
 .TaskDetails.exiting{
-    opacity: 1;
-
-    left: 0;
+    transform: translateX(0%);
 }
 .TaskDetails.exited{
-    opacity: 1;
-
-    left: 200%;
+    transform: translateX(100%);
 }
 .Task__container-one{
     display: flex;

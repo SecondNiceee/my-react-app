@@ -417,6 +417,7 @@
   position: absolute;
   top: -20px;
   left: -14px;
+  z-index: 20;
 }
 
 .TaskDetails {
@@ -430,29 +431,34 @@
   padding: 20.552px 17.4912px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  left: 0;
 }
 .TaskDetails.active {
   left: 0%;
 }
 
 .TaskDetails.entering {
-  opacity: 1;
-  left: 100%;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .TaskDetails.entered {
-  opacity: 1;
-  left: 0;
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 .TaskDetails.exiting {
-  opacity: 1;
-  left: 0;
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 .TaskDetails.exited {
-  opacity: 1;
-  left: 200%;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .Task__container-one {
@@ -871,11 +877,7 @@
   transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
 }
 
-input,
-textarea,
-button,
-select,
-a {
+* {
   -webkit-tap-highlight-color: transparent;
 }
 

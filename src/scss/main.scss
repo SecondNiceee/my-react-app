@@ -2,13 +2,10 @@
 @import './Values/Values.scss';
 @import './First/_FirstRem.scss';
 @import './First/_TaskDetails.scss';
-input,
-textarea,
-button,
-select,
-a {
+
+* {
     -webkit-tap-highlight-color: transparent;
-}
+  }
 .MainContainer{
     background: rgb(24, 34, 45);
     max-width: 430px;
