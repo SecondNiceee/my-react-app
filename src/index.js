@@ -9,7 +9,7 @@ import First from './pages/First/First';
 import AdCreating from './pages/AdCreating/AdCreating';
 import FirstDetails from './components/First/FirstDetails/FirstDetails';
 
-<script   src="https://telegram.org/js/telegram-web-app.js"  ></script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
 
 ReactDOM.render(
       <BrowserRouter >

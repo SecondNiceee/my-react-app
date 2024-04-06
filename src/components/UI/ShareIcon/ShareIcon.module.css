@@ -1,6 +1,6 @@
 .ShareIcon{
-    width: calc(84px * 0.367);
-    height: calc(84px * 0.367 );
+    min-width: calc(84px * 0.367);
+    max-height: calc(84px * 0.367 );
     /* TG-Semi */
     background: rgb(34, 61, 82);
     border-radius: 50%;

@@ -21,11 +21,16 @@ import AdCreatingThree from "./pages/AdCreatingThree/AdCreatingThree";
 import FirstMenu from "./pages/FirstMenu/FirstMenu";
 import { useTon } from "./hooks/useTon";
 
-<script   src="https://telegram.org/js/telegram-web-app.js"  ></script>
-
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
 function App() {
   var BackButton = window.Telegram.WebApp.BackButton;
+  BackButton.isVisible = true;
   BackButton.show();
+  BackButton.onClick(function() {
+    window.Telegram.WebApp.showAlert("Нет пути назад!");
+    BackButton.hide();
+  });
+  console.log(BackButton.isVisible)
   // var BackButton = Telegram.WebApp.BackButton;
   // BackButton.isVisible = true;
   // BackButton.show();
@@ -64,9 +69,9 @@ function App() {
         document.addEventListener('touchend' , (e) => {
           endTouchX = e.changedTouches[0].pageX
           endTouchY = e.changedTouches[0].pageY
-          if (endTouchX > startTouchX && (Math.abs(startTouchY - endTouchY) < 60)) setMenuActive(true)
+          if (endTouchX > startTouchX && (Math.abs(startTouchY - endTouchY) < 150)) setMenuActive(true)
           if (isMenuActive){
-            if (endTouchX < startTouchX && (Math.abs(startTouchY - endTouchY) < 60)){ 
+            if (endTouchX < startTouchX && (Math.abs(startTouchY - endTouchY) < 150)){ 
               setMenuActive(false) }
           }
         })
