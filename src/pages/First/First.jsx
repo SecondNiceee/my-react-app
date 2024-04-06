@@ -6,7 +6,7 @@ import FirstDetails from '../../components/First/FirstDetails/FirstDetails'
 import { useFilteredArr } from "../../hooks/useFilteredArr";
 import { Transition } from 'react-transition-group'
 
-const First = ( {setMenuActive} ) => {
+const First = ( {setMenuActive , isMenuActive} ) => {
   const [ordersInformation, setOrderInformation] = useState([
     {
       title: "UX/UI-дизайнер для разработки прототипа интернет-магазина",
@@ -65,9 +65,8 @@ const First = ( {setMenuActive} ) => {
   const filteredArr = useFilteredArr(ordersInformation , filterBy)
 
   const [isDetailsActive, setDetailsActive] = useState(false);
-  
   return (
-    <div className="First">
+    <div className="First" onClick={() => { if(isMenuActive){setMenuActive(false) }   }}>
        <FirstTop setMenuActive={setMenuActive} setFilterBy = {setFilterBy} />
 
       <FirstMain setDetailsActive = {setDetailsActive} ordersInformation = {filteredArr}  />

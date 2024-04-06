@@ -6,11 +6,10 @@ import SmallDimond from '../../components/UI/SmallDimond/SmallDimond';
 import UpArr from '../../components/UI/UpArr/UpArr';
 import Human from '../../components/UI/Human/Human'
 import Pensel from '../../components/UI/Pencel/Pencel'
-const FirstMenu = ({isMenuActive , setMenuActive}) => {
+const FirstMenu = ({isMenuActive , setMenuActive , menuRef}) => {
 
     return (
-        <>
-        <div className= {  isMenuActive ? 'FirstMenu'  :  'FirstMenu hidden'  }>
+        <div ref = {menuRef}  className= {  isMenuActive ? 'FirstMenu'  :  'FirstMenu hidden'  }>
             <Close isMenuActive = {isMenuActive} setMenuActive = {setMenuActive}  />
             <div className="FirstMenu__top">
                 <img className='icon' src= {HumanIcon} alt="" />
@@ -47,8 +46,6 @@ const FirstMenu = ({isMenuActive , setMenuActive}) => {
             </div>
 
         </div>
-        <Outlet />
-        </>
     );
 };
 

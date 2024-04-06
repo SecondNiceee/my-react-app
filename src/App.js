@@ -1,9 +1,9 @@
-import react, { useEffect } from "react";
+import react, { useEffect, useRef } from "react";
 // import { Route, Routes } from "react-router-dom";
 import First from "./pages/First/First";
 import "./css/Main.css";
 import "./css/Fonts.css";
-import AdCreating from "./pages/AdCreating/AdCreating";
+
 import AdCreatingTwo from './pages/ADCreatingTwo/AdCreatingTwo/AddCreatingTwo'
 
 
@@ -19,6 +19,7 @@ import { useState } from "react";
 import AdCreatingOne from "./pages/AdCreatingOne/AdCreatingOne/AdCreatingOne";
 import AdCreatingThree from "./pages/AdCreatingThree/AdCreatingThree";
 import FirstMenu from "./pages/FirstMenu/FirstMenu";
+import { useTon } from "./hooks/useTon";
 
 
 window.Telegram.WebApp.isVisible = true;
@@ -34,52 +35,22 @@ function App() {
         taskDate: { start: "", end: "" },
       });
 
-      const [tonConstant, setTonConstant] = useState(0);
-      const [dollarValue, setDollarValue] = useState(0);
-
-      async function getCurrencies() {
-        const response = await fetch("https://www.cbr-xml-daily.ru/daily_json.js");
-        const data = await response.json();
-        const result = await data;
-        console.log("Был вызов!!Снижение производительности!");
-        return result.Valute.USD.Value;
-      }
-
-      async function getTonPrice() {
-        const response = await fetch(
-          "https://api.coingecko.com/api/v3/coins/the-open-network"
-        );
-        const data = await response.json();
-        console.log("Был вызов!!Снижение производительности!");
-        return data.market_data.current_price.usd;
-      }
-      function getDollarByRuble() {
-        console.log("Функция была вызывана!!!");
-        getCurrencies().then((dollarPrice) => {
-          console.log(dollarPrice);
-          setDollarValue(dollarPrice);
-        });
-        return null;
-      }
-
-      function getTonByRuble() {
-        getTonPrice().then((tonPrice) => {
-          setTonConstant(dollarValue * tonPrice);
-        });
-        return null;
-      }
-
-      useEffect(() => {
-        getDollarByRuble();
-        getTonByRuble();
-      }, [tonConstant, dollarValue]);
-
-
+      const tonConstant = useTon()
       const [isMenuActive ,  setMenuActive] = useState(false)
+      const menuRef = useRef(null)
+      let start = 0;
+
+
+      document.addEventListener('touchstart' , (e) => {start = e.touches[0].clientX})
+      document.addEventListener('touchmove' , (e) => 
+      {
+        let raz =  e.touches[0].clientX - start
+        menuRef.current.style.left = (raz.toString() + 'px')
+      }    )
 
       return (
         <div className="MainContainer">
-          <Routes>
+          {/* <Routes>
               <Route path="/" element = {<FirstMenu isMenuActive={isMenuActive} setMenuActive={setMenuActive} />}>
                 <Route path="/"  element = {<First setMenuActive={setMenuActive} />}  />
                 <Route path="/AdCreatingOne"  element = {<AdCreatingOne taskInformation={taskInformation} setTaskInformation={setTaskInformation}  /> 
@@ -87,10 +58,13 @@ function App() {
                 
                 />
               </Route>
-          </Routes>
+          </Routes> */}
 
           {/* <AdCreatingTwo taskInformation={taskInformation} setTaskInformation={setTaskInformation} tonConstant = {tonConstant} />
           <AdCreatingThree taskInformation={taskInformation} setTaskInformation={setTaskInformation} /> */}
+
+          <FirstMenu menuRef = {menuRef} isMenuActive={isMenuActive} setMenuActive={setMenuActive}  />
+          <First setMenuActive={setMenuActive } isMenuActive={isMenuActive} />
         </div>
       );
 }
