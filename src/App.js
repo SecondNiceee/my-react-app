@@ -22,7 +22,7 @@ import FirstMenu from "./pages/FirstMenu/FirstMenu";
 import { useTon } from "./hooks/useTon";
 
 
-window.Telegram.WebApp.isVisible = true;
+
 function App() {
       const [taskInformation, setTaskInformation] = useState({
         category: "дизайн",
@@ -38,18 +38,10 @@ function App() {
       const tonConstant = useTon()
       const [isMenuActive ,  setMenuActive] = useState(false)
       const menuRef = useRef(null)
-      let start = 0;
 
-
-      document.addEventListener('touchstart' , (e) => {start = e.touches[0].clientX})
-      document.addEventListener('touchmove' , (e) => 
-      {
-        let raz =  e.touches[0].clientX - start
-        menuRef.current.style.left = (raz.toString() + 'px')
-      }    )
 
       return (
-        <div className="MainContainer">
+        <div className="MainContainer" style={{scale : 0.8}}>
           {/* <Routes>
               <Route path="/" element = {<FirstMenu isMenuActive={isMenuActive} setMenuActive={setMenuActive} />}>
                 <Route path="/"  element = {<First setMenuActive={setMenuActive} />}  />
