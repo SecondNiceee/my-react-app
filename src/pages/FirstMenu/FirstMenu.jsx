@@ -7,7 +7,7 @@ import UpArr from '../../components/UI/UpArr/UpArr';
 import Human from '../../components/UI/Human/Human'
 import Pensel from '../../components/UI/Pencel/Pencel'
 
-window.Telegram.WepApp.BackButton.isVisible = true;
+
 const FirstMenu = ({isMenuActive , setMenuActive , menuRef}) => {
 
     return (

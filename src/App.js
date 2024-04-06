@@ -21,10 +21,11 @@ import AdCreatingThree from "./pages/AdCreatingThree/AdCreatingThree";
 import FirstMenu from "./pages/FirstMenu/FirstMenu";
 import { useTon } from "./hooks/useTon";
 
-const tele = window.Telegram.WebApp;
-tele.BackButton.isVisible = true
+<script   src="https://telegram.org/js/telegram-web-app.js"  ></script>
+
 function App() {
-  tele.BackButton.isVisible = true
+  window.Telegram.WebApp.isVisible = true;
+  console.log(window.Telegram)
   // var BackButton = Telegram.WebApp.BackButton;
   // BackButton.isVisible = true;
   // BackButton.show();
