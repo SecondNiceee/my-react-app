@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.d011979b.css",
-    "main.js": "./static/js/main.c6cd5d7b.js",
+    "main.js": "./static/js/main.09819492.js",
     "static/media/sf-compact-rounded.ttf": "./static/media/sf-compact-rounded.5beab7105be2b1142b4b.ttf",
     "static/media/SF-Pro-Display-Medium.otf": "./static/media/SF-Pro-Display-Medium.b85d841dacb040b84951.otf",
     "static/media/Pencel.svg": "./static/media/Pencel.780cbeced38693cc2244ba795a5e72fd.svg",
@@ -15,10 +15,10 @@
     "static/media/UpDown.svg": "./static/media/UpDown.602fd0579eec9bf9d629c6c1c6531b83.svg",
     "static/media/upArr.svg": "./static/media/upArr.4020e5c688915ea551eab9f9a5c11931.svg",
     "main.d011979b.css.map": "./static/css/main.d011979b.css.map",
-    "main.c6cd5d7b.js.map": "./static/js/main.c6cd5d7b.js.map"
+    "main.09819492.js.map": "./static/js/main.09819492.js.map"
   },
   "entrypoints": [
     "static/css/main.d011979b.css",
-    "static/js/main.c6cd5d7b.js"
+    "static/js/main.09819492.js"
   ]
 }
