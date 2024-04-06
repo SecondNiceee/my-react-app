@@ -90,7 +90,7 @@ function App() {
 
           {/* <AdCreatingTwo taskInformation={taskInformation} setTaskInformation={setTaskInformation} tonConstant = {tonConstant} />
           <AdCreatingThree taskInformation={taskInformation} setTaskInformation={setTaskInformation} /> */}
-          {BackButton.show()}
+
           <FirstMenu menuRef = {menuRef} isMenuActive={isMenuActive} setMenuActive={setMenuActive}  />
           <First setMenuActive={setMenuActive } isMenuActive={isMenuActive} />
         </div>
