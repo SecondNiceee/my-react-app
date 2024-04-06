@@ -36,6 +36,13 @@
     width: calc(85px * 0.3644);
     height: calc(85px * 0.3644);
   }
+  .Burger__wrapper{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    left: -10px;
+  }
 }
 
 .FirstMain {
@@ -164,7 +171,7 @@
         height: calc(160px * 0.367);
     }
     &.hidden{
-        left: -100%;
+        transform: translateX(-100%);
     }
     .FirstMenu__top{
         display: flex;
@@ -311,7 +318,13 @@
         background: rgb(255, 255, 255);
     }
 
-
+    .close__wrapper{
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: -20px;
+        left: -14px;
+    }
 
 
 }

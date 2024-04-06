@@ -2,7 +2,10 @@ import React from 'react';
 import classes from "./Burger.module.css"
 const Burger = (props) => {
     return (
-        <div {...props} className= {classes.Burger}>
+        <div className= {classes.Burger}>
+            <div {...props}  className="Burger__wrapper">
+
+            </div>
             <span></span>
             <span></span>
             <span></span>

@@ -21,9 +21,11 @@ import AdCreatingThree from "./pages/AdCreatingThree/AdCreatingThree";
 import FirstMenu from "./pages/FirstMenu/FirstMenu";
 import { useTon } from "./hooks/useTon";
 
+window.Telegram.WepApp.BackButton.isVisible = true;
 
 
 function App() {
+  window.Telegram.WepApp.BackButton.isVisible = true;
       const [taskInformation, setTaskInformation] = useState({
         category: "дизайн",
         subcategory: "дизайн сайтов и приложений",
@@ -38,10 +40,34 @@ function App() {
       const tonConstant = useTon()
       const [isMenuActive ,  setMenuActive] = useState(false)
       const menuRef = useRef(null)
+      
+
+      useEffect(() => {
+        let startTouchX = 0;
+        let endTouchX = 0;
+        let startTouchY = 0;
+        let endTouchY = 0;
+        document.addEventListener('touchstart' , (e) => {
+          startTouchX = e.changedTouches[0].pageX
+          startTouchY = e.changedTouches[0].pageY
+        })
+        document.addEventListener('touchend' , (e) => {
+          endTouchX = e.changedTouches[0].pageX
+          endTouchY = e.changedTouches[0].pageY
+          if (endTouchX > startTouchX && (Math.abs(startTouchY - endTouchY) < 60)) setMenuActive(true)
+          if (isMenuActive){
+            if (endTouchX < startTouchX && (Math.abs(startTouchY - endTouchY) < 60)){ 
+              setMenuActive(false) }
+          }
+        })
+
+
+      }, [isMenuActive])
+
 
 
       return (
-        <div className="MainContainer" style={{scale : 0.8}}>
+        <div className="MainContainer" >
           {/* <Routes>
               <Route path="/" element = {<FirstMenu isMenuActive={isMenuActive} setMenuActive={setMenuActive} />}>
                 <Route path="/"  element = {<First setMenuActive={setMenuActive} />}  />

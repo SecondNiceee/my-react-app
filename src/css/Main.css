@@ -58,6 +58,13 @@
   width: 30.974px;
   height: 30.974px;
 }
+.FirstTop .Burger__wrapper {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -10px;
+  left: -10px;
+}
 
 .FirstMain {
   margin-top: 20.185px;
@@ -227,7 +234,9 @@
   height: 58.72px;
 }
 .FirstMenu.hidden {
-  left: -100%;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 .FirstMenu .FirstMenu__top {
   display: -webkit-box;
@@ -400,6 +409,13 @@
           transform: rotate(-45deg);
   border-radius: 3px;
   background: rgb(255, 255, 255);
+}
+.FirstMenu .close__wrapper {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: -20px;
+  left: -14px;
 }
 
 .TaskDetails {
@@ -854,8 +870,20 @@
   transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .MainContainer {
   background: rgb(24, 34, 45);
   max-width: 430px;
   height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow-x: hidden;
 }
