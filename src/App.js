@@ -32,7 +32,7 @@ function App() {
   });
   window.Telegram.WebApp.setBackgroundColor('#000000')
   window.Telegram.WebApp.setHeaderColor('#ffffff')
-  
+
   // var BackButton = Telegram.WebApp.BackButton;
   // BackButton.isVisible = true;
   // BackButton.show();
@@ -71,9 +71,9 @@ function App() {
         document.addEventListener('touchend' , (e) => {
           endTouchX = e.changedTouches[0].pageX
           endTouchY = e.changedTouches[0].pageY
-          if (endTouchX > startTouchX && (Math.abs(startTouchY - endTouchY) < 150)) setMenuActive(true)
+          if (endTouchX - startTouchX > 80 && (Math.abs(startTouchY - endTouchY) < 150)) setMenuActive(true)
           if (isMenuActive){
-            if (endTouchX < startTouchX && (Math.abs(startTouchY - endTouchY) < 150)){ 
+            if (endTouchX - startTouchX < 80 && (Math.abs(startTouchY - endTouchY) < 150)){ 
               setMenuActive(false) }
           }
         })
