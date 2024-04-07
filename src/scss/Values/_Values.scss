@@ -1,7 +1,8 @@
 
 $height : 0.367;
 $width : 0.3644;
-
+// $width : clamp(0.015rem, 0.09vw, 0.063rem)
+// $height
 
 @mixin greyText($fs){
     /* Small Text */

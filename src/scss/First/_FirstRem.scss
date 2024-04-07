@@ -16,12 +16,12 @@
 .EmptyText {
   color: rgb(255, 255, 255);
   font-family: "SF Pro Display";
-  font-size: calc(100px * 0.3644);
+  font-size: calc(100px * $width);
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0%;
   text-align: center;
-  max-width: calc(730px * 0.3644);
+  max-width: calc(730px * $width);
   margin-right: auto;
   margin-left: auto;
   margin-right: auto;
@@ -33,8 +33,8 @@
   gap: calc(30px * (430 / 1180));
   align-items: center;
   img {
-    width: calc(85px * 0.3644);
-    height: calc(85px * 0.3644);
+    width: calc(85px * $width);
+    height: calc(85px * $width);
   }
   .Burger__wrapper{
     position: absolute;
@@ -62,30 +62,30 @@
     .FirstMain__top {
     display: flex;
         img {
-      margin-right: calc(30px * 0.3644);
+      margin-right: calc(30px * $width);
         }
         p {
       /* Default text */
       color: rgb(255, 255, 255);
       font-family: "SF Pro Display";
-      font-size: calc(44px * 0.3644);
+      font-size: calc(44px * $width);
       font-weight: 500;
-      line-height: calc(53px * 0.3644);
+      line-height: calc(53px * $width);
       letter-spacing: 0%;
       text-align: left;
-      max-width: calc(730px * 0.3644);
+      max-width: calc(730px * $width);
       margin-right: auto;
         }
   }
   .circle{
-    min-width: calc(84px * 0.3644);
-    max-height: calc(84px * 0.3644);
+    min-width: calc(84px * $width);
+    max-height: calc(84px * $width);
     border-radius: 50%;
     background: rgb(34, 61, 82);
     position: relative;
     img{
-        width: calc(59px * 0.3644);
-        height: calc(59px * 0.3644);
+        width: calc(59px * $width);
+        height: calc(59px * $width);
         position: absolute;
         left: 50%;
         top: 50%;
@@ -100,9 +100,9 @@
     p{
     color: rgb(149, 151, 158);
     font-family: "SF Pro Display";
-    font-size: calc(35px * 0.3644);
+    font-size: calc(35px * $width);
     font-weight: 500;
-    line-height: (37.61px*0.3644);
+    line-height: (37.61px*$width);
     letter-spacing: 0%;
     text-align: left;
     color: rgb(149, 151, 158);
@@ -122,7 +122,7 @@
                 /* Default text */
             color: rgb(218, 245, 254);
             font-family: "SF Pro Display";
-            font-size: calc(44px * 0.3644) ;
+            font-size: calc(44px * $width) ;
             font-weight: 500;
             line-height: normal;
             letter-spacing: 0%;
@@ -136,7 +136,7 @@
         h3{
             color: rgb(255, 255, 255);
             font-family: "SF Compact Rounded";
-            font-size: calc(70px * 0.3644);
+            font-size: calc(70px * $width);
             font-weight: 500;
             line-height: normal;
             letter-spacing: 0%;
@@ -147,7 +147,7 @@
     }
     .FirstMain__bottom-right{
         display: flex;
-        gap: calc(23px * 0.3644);
+        gap: calc(23px * $width);
         .tie{
             align-self: center;
             line-height: 0;
@@ -162,14 +162,14 @@
 
     left: 0px;
     bottom: 0;
-    width: calc(904px * 0.3644);
-    padding: calc(81px * $height) calc(48px * 0.3644);
+    width: calc(904px * $width);
+    padding: calc(81px * $height) calc(48px * $width);
     display: flex;
     flex-direction: column;
     transition: 0.5s;
     .icon{
-        width: calc(160px * 0.367);
-        height: calc(160px * 0.367);
+        width: calc(160px * $height);
+        height: calc(160px * $height);
     }
     &.hidden{
         transform: translateX(-100%);
@@ -177,7 +177,7 @@
     .FirstMenu__top{
         display: flex;
         align-items: center;
-        gap: calc(40px * 0.3644);
+        gap: calc(40px * $width);
     }
     .FirstMenu__top-right{
         display: flex;
@@ -188,7 +188,7 @@
         /* TON Price */
         color: rgb(255, 255, 255);
         font-family: "SF Compact Rounded";
-        font-size: calc(70px * 0.3644);
+        font-size: calc(70px * $width);
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0%;
@@ -201,7 +201,7 @@
         p{
             color: rgb(218, 245, 254);
             font-family: "SF Pro Display";
-            font-size: calc(44px * 0.3644);
+            font-size: calc(44px * $width);
             font-weight: 500;
             line-height: normal;
             letter-spacing: 0%;
@@ -213,8 +213,8 @@
         border-radius: calc(30px * $width);
         background: rgb(32, 48, 63);
         padding-top: calc(25px *  $height);
-        padding-left: calc(49px * 0.3644);
-        padding-right: calc(49px * 0.3644);
+        padding-left: calc(49px * $width);
+        padding-right: calc(49px * $width);
         padding-bottom: calc(25px *  $height);
         display: flex;
         gap: 7px;
@@ -236,7 +236,7 @@
         /* TON Price */
         color: rgb(255, 255, 255);
         font-family: "SF Compact Rounded";
-        font-size: calc(70px * 0.3644);
+        font-size: calc(70px * $width);
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0%;
@@ -246,7 +246,7 @@
         /* Default text */
         color: rgb(218, 245, 254);
         font-family: "SF Pro Display";
-        font-size: calc(44px * 0.3644);
+        font-size: calc(44px * $width);
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0%;
@@ -262,7 +262,7 @@
         a{
             color: rgb(149, 151, 158);
             font-family: "SF Pro Display";
-            font-size: calc(48px * 0.3644);
+            font-size: calc(48px * $width);
             font-weight: 500;
             line-height: normal;
             letter-spacing: 0%;
@@ -278,12 +278,12 @@
         display: flex;
         gap: 5px;
         img{
-            width: calc(58px * 0.3644);
+            width: calc(58px * $width);
         }
         a{
             color: rgb(255, 255, 255);
             font-family: "SF Pro Display";
-            font-size: calc(48px * 0.3644);
+            font-size: calc(48px * $width);
             font-weight: 500;
             line-height: normal;
             letter-spacing: 0%;
@@ -295,14 +295,14 @@
     .close {
         cursor: pointer;
         position: absolute;
-        width: calc(48px * 0.3644);
-        height: calc(48px * 0.3644);
-        right: calc(48px * 0.3644);
+        width: calc(48px * $width);
+        height: calc(48px * $width);
+        right: calc(48px * $width);
         top: calc(79px * $height);
     }
     .close span:nth-child(1){
         position: absolute;
-        width: calc(62px * 0.3644 );
+        width: calc(62px * $width );
         height: calc(6px * $height);
         background-color: white;
         transform: rotate(45.00deg);
@@ -311,7 +311,7 @@
     }
     .close span:nth-child(2){
         position: absolute;
-        width: calc(62px * 0.3644 );
+        width: calc(62px * $width );
         height: calc(6px * $height);
         background-color: white;
         transform: rotate(-45.00deg);

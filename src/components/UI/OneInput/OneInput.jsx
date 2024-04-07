@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './OneInput.module.css'
-const OneInput = ( props ) => {
+const OneInput = ( {  setInputValue , inputValue , ...props}) => {
     return (
-        <input style={props.style} {...props} type="text" className = {classes.OneInput}  />
+        <input value={inputValue} onChange={(e) => {setInputValue(e.target.value)}} style={props.style} {...props} type="text" className = {classes.OneInput}  />
     );
 };
 

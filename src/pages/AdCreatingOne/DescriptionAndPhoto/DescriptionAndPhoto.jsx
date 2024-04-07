@@ -19,12 +19,12 @@ const DescriptionAndPhoto = ({
     >
       <GreyText>Описание</GreyText>
       <div className={cl.InputContainer}>
-        <p className={cl.inputCounter}>0 / 500</p>
+        <p className={cl.inputCounter} style={ taskInformation.taskDescription.length < 500 ? {} : {color : '#8a0303'}}>{taskInformation.taskDescription.length} / 500</p>
         <TextArea
           value={taskInformation.taskDescription}
           className={cl.DescriptionInput}
           placeholder="Дайте подробное тз..."
-          setValue = {   (e) =>   { setTaskInformation( {taskDescription : e} ) } } 
+          setValue = {   (e) =>   { setTaskInformation( { ...taskInformation ,taskDescription : e} ) } } 
         ></TextArea>
       </div>
       <FileInput />

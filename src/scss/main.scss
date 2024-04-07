@@ -2,6 +2,7 @@
 @import './Values/Values.scss';
 @import './First/_FirstRem.scss';
 @import './First/_TaskDetails.scss';
+@import './AdCreating.scss';
 
 * {
     -webkit-tap-highlight-color: transparent;
@@ -22,5 +23,6 @@
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
+
 }
 *::-webkit-scrollbar {display:none;}

@@ -1,7 +1,7 @@
 .ChoiceCategory{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
@@ -10,4 +10,11 @@
     padding-left: calc(48px * 0.367);
     padding-right: calc(48px * 0.367);
     padding-top: calc(56px * 0.367);
+}
+
+.categoryContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
 }

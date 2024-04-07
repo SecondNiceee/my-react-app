@@ -11,6 +11,7 @@
 .Categories__block{
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     
 }
@@ -24,7 +25,7 @@
     letter-spacing: 1%;
     text-align: left;
 }
-.Category__link{
+.Categories__block  .Category__link{
     color: rgb(46, 165, 255);
     font-family: "SF Pro Display";
     font-size: calc(52px * 0.3644);
@@ -33,6 +34,7 @@
     letter-spacing: 1%;
     text-align: right;
 }
+
 
 .line{
     position: absolute;

@@ -44,8 +44,8 @@ function App() {
   //   /* код */
   // });
       const [taskInformation, setTaskInformation] = useState({
-        category: "дизайн",
-        subcategory: "дизайн сайтов и приложений",
+        category: { name : 'дизайн1',  value : 'design1' },
+        subCategory: "дизайн сайтов и приложений",
         taskName: "",
         taskDescription: "",
         photos: "",
@@ -98,8 +98,10 @@ function App() {
           {/* <AdCreatingTwo taskInformation={taskInformation} setTaskInformation={setTaskInformation} tonConstant = {tonConstant} />
           <AdCreatingThree taskInformation={taskInformation} setTaskInformation={setTaskInformation} /> */}
 
-          <FirstMenu menuRef = {menuRef} isMenuActive={isMenuActive} setMenuActive={setMenuActive}  />
-          <First setMenuActive={setMenuActive } isMenuActive={isMenuActive} />
+          {/* <FirstMenu menuRef = {menuRef} isMenuActive={isMenuActive} setMenuActive={setMenuActive}  />
+          <First setMenuActive={setMenuActive } isMenuActive={isMenuActive} /> */}
+
+          <AdCreatingOne taskInformation={taskInformation} setTaskInformation={setTaskInformation} />
         </div>
       );
 }

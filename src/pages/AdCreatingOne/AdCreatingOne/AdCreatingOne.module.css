@@ -5,6 +5,8 @@
     overflow-x: hidden;
     width: 100%;
     height: 100%;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 .Cap {
     margin-top: calc(70px * 0.3644);
