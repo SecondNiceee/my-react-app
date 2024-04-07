@@ -10,7 +10,7 @@
 .TaskName p:last-child {
     /* Description */
     color: rgb(218, 245, 254);
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display 400";
     font-size: calc(40px * 0.367);
     font-weight: 400;
     line-height: normal;
