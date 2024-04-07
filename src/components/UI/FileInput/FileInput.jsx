@@ -32,7 +32,7 @@ const FileInput = ({className}) => {
                                 setImages([...images , URL.createObjectURL(event.target.files[0])]);
         }
 
-                        }} type="file"  id="file" multiple accept="image/*" class= {cl.none}/>
+                        }} type="file"  id="file"  accept="image/*" class= {cl.none}/>
 
 
 
