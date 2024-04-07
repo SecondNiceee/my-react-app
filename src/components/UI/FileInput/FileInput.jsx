@@ -10,14 +10,14 @@ const FileInput = ({className}) => {
     return (
 
 
-            <div className={className ? [cl.FileInput, className].join(' ') : cl.FileInput }>
+            <div style={images.length === 0 ? {display:'flex'} : {} } className={className ? [cl.FileInput, className].join(' ') : cl.FileInput }>
                                 {images.map( (e) => {
                     return(
                         <div className={cl.imageFeetContainer}>
-                            <img onClick={(obj) => {
-                                setFiles([...files].filter(obj => URL.createObjectURL(obj) !=  URL.createObjectURL(obj)  ))
+                            <img onClick={() => {
+                                setFiles([...files].filter(obj => {
+                                    return (files.indexOf(obj) !== images.indexOf(e)) }  ))
                                 setImages([...images].filter((m) => m!=e)) 
-                                console.log(files.length ,  images.length)
                                 }} src={trash} alt="" className={cl.removeIcon} />
                             <img   className={cl.imageFeet} src = {e}  alt="" />
                         </div>
@@ -25,10 +25,9 @@ const FileInput = ({className}) => {
 
                 }
                 )}
-            <label className={images.length !== 0 ? cl.ActiveMainLabel : cl.MainLabel} htmlFor="file">
+            <label style={images.length === 5 ? {display : 'none'} : {}} className={images.length !== 0 ? cl.ActiveMainLabel : cl.MainLabel} htmlFor="file">
                     <input onChange={(event) => {
                             if (event.target.files && event.target.files[0]) {
-                                console.log(event.target.files[0])
                                 setFiles([...files , event.target.files[0]])
                                 setImages([...images , URL.createObjectURL(event.target.files[0])]);
         }
