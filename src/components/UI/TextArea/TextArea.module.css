@@ -1,9 +1,9 @@
 .TextArea{
     /* Camption Regular */
-    color: rgb(218, 245, 254);
+    color: white;
     font-family: "SF Pro Display";
     font-size: calc(50px *  0.3644);
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     padding: calc(36px * .367) calc(50px * 0.3644);
     letter-spacing: 1%;
@@ -15,7 +15,7 @@
 }
 ::-webkit-textarea-placeholder {
     color: rgb(218, 245, 254);
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display 400";
     font-size: calc(50px *  0.3644);
     font-weight: 400;
     line-height: normal;

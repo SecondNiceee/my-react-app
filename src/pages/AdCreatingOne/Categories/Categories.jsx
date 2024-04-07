@@ -10,7 +10,9 @@ const Categories = ({className , taskInformation, setCatagoryChoiceOpen , setSub
             <hr className={cl.line} />
             <div className={cl.Categories__block}>
                 <p>Подкатегория</p>
-                <p  onClick={() => {setSubcategoryChoiceOpen(true)}} className={cl.Category__link} href="">{taskInformation.subCategory.slice(0,18)}.</p>
+                <p  onClick={() => {setSubcategoryChoiceOpen(true)}} className={cl.Category__link} href="">{taskInformation.subCategory.slice(0,18)}
+                {taskInformation.subCategory=== '-' ? '' : '.'}
+                </p>
             </div>
         </div>
     );

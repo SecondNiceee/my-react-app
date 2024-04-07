@@ -7,6 +7,7 @@
     height: 100%;
     padding-left: 17px;
     padding-right: 17px;
+    padding-bottom: calc(70px * 0.367);
 }
 .Cap {
     margin-top: calc(70px * 0.3644);

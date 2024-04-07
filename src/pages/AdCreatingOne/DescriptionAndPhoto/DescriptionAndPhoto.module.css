@@ -19,3 +19,6 @@
 .InputContainer{
     position: relative;
 }
+.GreyText{
+    margin-left: calc(49px * 0.367);
+}

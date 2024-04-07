@@ -31,7 +31,7 @@ const ChoiceCategory = ({
           return (
             <div
               onClick={() => {
-                setTaskInformation({ ...taskInformation, category: {name : e.name , value : e.value}});
+                setTaskInformation({ ...taskInformation, category: {name : e.name , value : e.value} , subCategory : '-'});
                 setCatagoryChoiceOpen(false);
               }}
               className={cl.wrap}

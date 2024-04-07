@@ -1,7 +1,7 @@
 .GreyText{
     /* Default text CAPS */
     color: rgb(132, 137, 143);
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display 400";
     font-size: calc(40px * 0.3644);
     font-weight: 400;
     line-height: normal;

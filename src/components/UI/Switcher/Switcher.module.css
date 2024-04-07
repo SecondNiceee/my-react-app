@@ -19,12 +19,12 @@
     height: calc(78px * 0.367);
     border-radius: 50%;
     background: white;
-    left: calc(6px * 0.367);
-    bottom: calc(50%);
-    transform: translateY(50%);
+    left: 3px;
+    bottom:3px;
 
 }
 .circle.active{
     left: unset;
-    left: calc( 50% - calc(6px * 0.367) );
+    left: calc(100% - 32px);
+
 }

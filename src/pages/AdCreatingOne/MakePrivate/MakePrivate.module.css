@@ -20,6 +20,7 @@
 
 .whoCanSee{
     margin-top: calc(18px * 0.367);
+    margin-left: calc(49px* 0.367);
     /* Description */
     color: rgb(218, 245, 254);
     font-family: "SF Pro Display";
@@ -28,4 +29,5 @@
     line-height: normal;
     letter-spacing: 2%;
     text-align: left;
+    margin-bottom: calc(100px * 0.367);
 }
